@@ -1,0 +1,168 @@
+@import '@fontsource-variable/inter';
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #07090c;
+  --color-accent: #7ea8ff;
+  --color-fg: #f4f7fb;
+  /* Site canvas — the dark base background used at varying opacities in the navbar */
+  --color-canvas: #07090c;
+  /* Named shadows — replaces inline shadow-[...] arbitrary values */
+  --shadow-nav: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-accent-glow: 0 0 20px rgba(126, 168, 255, 0.12);
+  --shadow-accent-glow-lg: 0 0 32px rgba(126, 168, 255, 0.2);
+  --shadow-accent-btn: 0 0 24px rgba(126, 168, 255, 0.1);
+  --shadow-accent-focus: 0 0 0 3px rgba(126, 168, 255, 0.08);
+  --shadow-accent-ring: 0 0 0 1px rgba(126, 168, 255, 0.15), 0 0 18px rgba(126, 168, 255, 0.06);
+  --shadow-card: 0 4px 40px rgba(0, 0, 0, 0.3);
+  /* Extended border-radius scale */
+  --radius-4xl: 2rem;   /* 32px */
+  --radius-5xl: 2.5rem; /* 40px */
+}
+
+@layer base {
+
+  html {
+    background: #07090c;
+    color: var(--color-fg);
+    scroll-behavior: auto;
+    height: 100%;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at top right, rgba(126,168,255,0.08), transparent 30%),
+      radial-gradient(circle at bottom left, rgba(255,255,255,0.04), transparent 20%),
+      #07090c;
+
+    color: var(--color-fg);
+
+    font-family: 'Inter Variable', 'Inter', sans-serif;
+    overflow-x: hidden;
+    letter-spacing: -0.02em;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Root flex column so Layout's <main> can be the scroll container */
+    height: 100%;
+  }
+
+  /* #root fills the viewport and stacks Navbar + main vertically */
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px);
+
+    background-size: 32px 32px;
+
+    mask-image: radial-gradient(ellipse 100% 80% at 50% 0%, black 0%, transparent 85%);
+
+    pointer-events: none;
+    z-index: 0;
+
+    will-change: transform;
+    transform: translateZ(0);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer utilities {
+  /* Named gradient backgrounds — replaces all [background:...] arbitrary CSS */
+  .bg-panel-glow {
+    background:
+      radial-gradient(circle at top, rgba(126,168,255,0.08), transparent 40%),
+      rgba(255,255,255,0.03);
+  }
+  .bg-panel-glow-strong {
+    background:
+      radial-gradient(circle at top, rgba(126,168,255,0.16), transparent 30%),
+      linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  }
+  .bg-panel-card {
+    background:
+      radial-gradient(circle at top right, rgba(126,168,255,0.1), transparent 45%),
+      linear-gradient(160deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+  }
+  .bg-panel-subtle {
+    background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+  }
+  .bg-hero-glow {
+    background: radial-gradient(circle at top right, rgba(126,168,255,0.3), transparent 55%);
+  }
+  .bg-about-hero {
+    background:
+      radial-gradient(circle at top, rgba(126,168,255,0.18), transparent 55%),
+      linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+  }
+  /* Repeating grid line overlay — used as decorative bg in project/about sections */
+  .bg-grid-subtle {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
+
+.page-container {
+  width: min(1320px, calc(100% - 48px));
+  margin-inline: auto;
+  position: relative;
+  z-index: 2;
+}
+
+[data-fade] {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease-out, transform 0.65s ease-out;
+  will-change: transform, opacity;
+}
+
+[data-fade][data-visible] {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-enter {
+  animation: page-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}

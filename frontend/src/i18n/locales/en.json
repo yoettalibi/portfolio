@@ -1,0 +1,509 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "work": "Work",
+    "systems": "Systems",
+    "insights": "Insights",
+    "cta": "Start a Conversation",
+    "dashboard": "Dashboard",
+    "ariaMain": "Main navigation",
+    "ariaToggle": "Toggle menu"
+  },
+  "hero": {
+    "badge": "Engineering Digital Systems",
+    "heading": "Engineering scalable digital systems with",
+    "headingFade": "precision, structure, and long-term thinking.",
+    "body": "I design and build scalable SaaS platforms, mobile applications, workflow automation systems, and custom business software — engineered for operational clarity, long-term maintainability, and serious product performance.",
+    "cta1": "View Selected Work",
+    "cta2": "Explore Systems",
+    "dashboardTitle": "System Overview",
+    "dashboardStatus": "All systems operational",
+    "dashboardPerfLabel": "System Performance",
+    "dashboardPerfSub": "Uptime across all infrastructure nodes",
+    "stats": [
+      { "label": "Architecture", "value": "Scalable" },
+      { "label": "Execution", "value": "Structured" },
+      { "label": "Automation", "value": "Active" },
+      { "label": "Logic Layer", "value": "Structured" }
+    ],
+    "tags": ["Performance-first", "Precision", "Long-term Reliability"]
+  },
+  "systems": {
+    "label": "Systems Expertise",
+    "heading": "SaaS platforms, mobile applications, workflow automation, and custom business software built for long-term performance.",
+    "items": [
+      { "title": "Systems Architecture", "desc": "Engineering scalable web and mobile architectures designed for performance, maintainability, and long-term operational clarity across complex business products." },
+      { "title": "SaaS Engineering", "desc": "End-to-end SaaS platform development — subscription workflows, multi-tenant architecture, billing systems, and scalable product infrastructure." },
+      { "title": "Mobile Applications", "desc": "High-performance mobile application development engineered for reliability, smooth user experience, and seamless integration with backend systems." },
+      { "title": "Automation Systems", "desc": "Custom workflow automation and business process systems designed to eliminate manual overhead and increase operational efficiency at scale." },
+      { "title": "Frontend Systems", "desc": "High-performance web interfaces and dashboard systems engineered for clarity, usability, and premium digital product experiences." },
+      { "title": "Backend Infrastructure", "desc": "Reliable backend ecosystems — REST APIs, business logic layers, role-based access control, and structured data architecture built to scale." }
+    ]
+  },
+  "insights": {
+    "label": "Engineering Notes",
+    "heading": "Thoughts on systems, scalability, and digital architecture.",
+    "notes": [
+      { "cat": "Architecture", "title": "Performance Is an Architectural Decision", "desc": "Most systems attempt optimization too late. Real performance begins with structure, not patches." },
+      { "cat": "Systems Thinking", "title": "Good Systems Create Operational Clarity", "desc": "Structured interfaces and clean logic reduce friction, confusion, and long-term technical debt." },
+      { "cat": "Engineering Philosophy", "title": "Simplicity Requires Discipline", "desc": "The cleanest systems are often the result of deep engineering thought and careful architectural restraint." }
+    ]
+  },
+  "philosophy": {
+    "label": "Engineering Philosophy",
+    "lines": [
+      "Performance begins in architecture.",
+      "Good systems reduce chaos.",
+      "Precision builds trust.",
+      "Simplicity is engineered."
+    ]
+  },
+  "principles": {
+    "label": "Engineering Principles",
+    "workLabel": "Selected Work",
+    "workHeading": "Engineered digital systems built for clarity, scale, and reliability.",
+    "items": [
+      { "title": "Performance-First", "desc": "Every architectural decision is evaluated against its impact on speed, responsiveness, and long-term system health." },
+      { "title": "Structured Systems", "desc": "Clarity of structure reduces complexity. Clean separation of concerns makes systems predictable and maintainable." },
+      { "title": "Built to Scale", "desc": "Systems are designed from day one to handle growth — in data, users, and operational complexity — without rearchitecting." },
+      { "title": "Precision Engineering", "desc": "Details are not afterthoughts. Precise logic, clean interfaces, and well-defined contracts define the quality of the output." },
+      { "title": "Logic-Driven Design", "desc": "Features follow function, not fashion. Every component earns its place through clear purpose and measurable value." },
+      { "title": "Long-Term Reliability", "desc": "Durability is engineered, not assumed. Systems are built to remain stable, understandable, and operational over time." }
+    ]
+  },
+  "aboutSection": {
+    "label": "About",
+    "heading": "More than interfaces. Structured systems engineered for trust.",
+    "body": "I specialise in full-stack SaaS development, mobile application engineering, scalable web architecture, and custom business software. Every product is designed as a complete structure — clear logic, reliable infrastructure, and long-term maintainability built in from day one.",
+    "cta": "About the Mind Behind the Systems"
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Let's Work",
+    "headingFade": "Together.",
+    "body": "Have a project in mind? Pick what you need below, fill in a few details, and I'll get back to you within 24 hours.",
+    "form": {
+      "step1Label": "What are you looking for? (pick all that apply)",
+      "detailsLabel": "Your details",
+      "nameLabel": "Who are you?",
+      "namePlaceholder": "Your name or company",
+      "emailLabel": "Where can I reach you?",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "What's the project?",
+      "messagePlaceholder": "Describe what you're building, what problem you're solving, or where you're stuck. The more detail, the better.",
+      "personalNote": "I read every message personally.",
+      "replyNote": "Reply within 24 hours.",
+      "submit": "Send It",
+      "termsCheckPre": "I have read and agree to the",
+      "termsPrivacy": "Privacy Policy",
+      "termsAnd": "and",
+      "termsTerms": "Terms & Conditions",
+      "nameMinHint": "Minimum 5 characters",
+      "messageMinHint": "Minimum 150 characters",
+      "successHeading": "Got it — thanks",
+      "successBody": "I'll review your project and get back to you within 24 hours.",
+      "successSentTo": "Sent to",
+      "successReplyTime": "Expected reply",
+      "successReplyValue": "Within 24 hours",
+      "successReset": "Send another message",
+      "emailError": "Enter a valid address — e.g. name@domain.com"
+    },
+    "services": [
+      { "id": "saas", "title": "Web App or SaaS Product", "desc": "Build a full web application with user accounts, subscriptions, dashboards, and an API." },
+      { "id": "workflow", "title": "Automation & Workflows", "desc": "Automate repetitive tasks, connect your tools, and reduce manual work across your team." },
+      { "id": "backend", "title": "Backend & API", "desc": "Design the server logic, database, and APIs that keep your product fast and reliable." },
+      { "id": "interface", "title": "Interface or Dashboard", "desc": "A clean, responsive UI — admin panel, analytics view, or customer-facing web experience." },
+      { "id": "biztools", "title": "Business Management Tool", "desc": "Custom software to manage your team, track operations, and run your business smoothly." },
+      { "id": "other", "title": "Something Else", "desc": "Have a unique idea or not sure where to start? Describe it and we'll figure it out together." }
+    ],
+    "seo": {
+      "title": "Contact — ET-TALIBI | Start Your Project",
+      "description": "Have a project in mind? Get in touch with ET-TALIBI for web apps, SaaS products, backend systems, and custom software engineering. Reply within 24 hours.",
+      "canonical": "https://ettalibi.com/contact"
+    }
+  },
+  "aboutPage": {
+    "back": "Back to Home",
+    "portrait": "Portrait",
+    "accentLabel": "Digital Systems Architecture",
+    "name": "ET-TALIBI",
+    "tagline": "Systems · Precision · Reliability",
+    "bio1": "I design and engineer digital systems built for operational clarity, long-term reliability, and business growth. Every system is structured around performance, maintainability, and real-world durability — not temporary trends.",
+    "bio2": "My work spans SaaS infrastructure, business platforms, operational dashboards, mobile applications, automation systems, and secure backend architecture — engineered to support businesses as they grow and evolve.",
+    "tags": ["SaaS Systems", "Business Infrastructure", "Mobile Applications", "Automation Systems", "Scalable Architecture"],
+    "expertiseLabel": "Expertise",
+    "expertiseHeading": "Structured Systems Built for Real Business Operations",
+    "capabilitiesLabel": "Core Capabilities",
+    "capabilitiesHeading": "Digital Infrastructure Built Around Real Business Needs",
+    "capabilityTags": ["SaaS Platforms", "Business Management Systems", "Operational Dashboards", "Cross-Platform Mobile Apps", "Secure Backend Infrastructure", "API Architecture", "Workflow Automation", "Cloud Infrastructure", "Multi-Tenant Systems", "Enterprise Workflows", "Performance Optimization", "System Architecture", "Custom Business Software", "Data-Driven Interfaces", "Long-Term Maintainability"],
+    "philosophyLabel": "Engineering Philosophy",
+    "philosophyHeading": "The Principles Behind Every System",
+    "opLabel": "Operational Thinking",
+    "opHeading": "Businesses Don't Need More Software. They Need Better Systems.",
+    "opBody1": "Most businesses struggle with disconnected workflows, operational inefficiencies, and software that wasn't designed around real business operations.",
+    "opBody2": "I focus on building structured digital systems that simplify operations, improve visibility, strengthen infrastructure, and support long-term business scalability.",
+    "stats": [
+      { "label": "Years Building Digital Systems" },
+      { "label": "Systems & Platforms Delivered" },
+      { "label": "Business Industries Supported" },
+      { "label": "Built for Scalability" }
+    ],
+    "expertise": [
+      { "title": "Scalable SaaS Infrastructure", "desc": "Multi-tenant SaaS platforms engineered with scalable architecture, subscription workflows, access management, and long-term operational stability." },
+      { "title": "Business Systems Architecture", "desc": "Custom digital systems designed around operational clarity, business workflows, and infrastructure that supports long-term company growth." },
+      { "title": "Operational Dashboards", "desc": "Structured dashboards and analytics systems that transform operational data into actionable business intelligence and decision-ready visibility." },
+      { "title": "Secure Backend Infrastructure", "desc": "Structured APIs, database architecture, authentication systems, and scalable backend services designed for performance and reliability." },
+      { "title": "Automation & Workflow Systems", "desc": "Automation pipelines and operational workflows that reduce manual overhead, improve efficiency, and simplify repetitive business operations." },
+      { "title": "Cross-Platform Applications", "desc": "High-performance web and mobile applications engineered with scalable frontend architecture and seamless user experiences." }
+    ],
+    "philosophy": [
+      { "title": "Structure Before Scale", "desc": "Scalable systems are not created by accident. Strong architecture, clear infrastructure, and operational clarity are the foundation of long-term growth." },
+      { "title": "Systems Should Simplify Business", "desc": "Technology should reduce operational friction, improve visibility, and support decision-making — not create unnecessary complexity." },
+      { "title": "Built for the Long Term", "desc": "Every platform is engineered with scalability, maintainability, and future growth in mind. Long-term reliability is part of the architecture itself." }
+    ],
+    "seo": {
+      "title": "About — ET-TALIBI | Digital Systems Architecture",
+      "description": "ET-TALIBI builds scalable digital systems, operational infrastructure, and secure business platforms engineered for long-term growth and reliability.",
+      "canonical": "https://ettalibi.com/about"
+    }
+  },
+  "login": {
+    "title": "Sign in",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in…",
+    "error": "Invalid email or password.",
+    "secureLabel": "Secure Access",
+    "headingFade": "Dashboard.",
+    "body": "Enter your credentials to access the admin area. Your session is encrypted and secure.",
+    "emailPlaceholder": "your@email.com",
+    "passwordPlaceholder": "••••••••"
+  },
+  "dashboard": {
+    "nav": {
+      "sectionLabel": "Navigation",
+      "analytics": "Google Analytics",
+      "analyticsSub": "Configure tracking",
+      "emails": "Emails",
+      "emailsSub": "Contact messages",
+      "profile": "Profile",
+      "profileSub": "Name & password",
+      "comingSoon": "Coming Soon",
+      "comingSoonSub": "Launch page",
+      "subscribers": "Subscribers",
+      "subscribersSub": "Email list"
+    },
+    "header": {
+      "label": "Dashboard",
+      "sessionStarted": "Session started",
+      "signOut": "Sign out",
+      "signingOut": "Signing out…"
+    },
+    "analytics": {
+      "eyebrow": "Configuration",
+      "heading": "Google",
+      "headingFade": "Analytics.",
+      "body": "Connect your GA4 property to automatically track page visits across your entire site.",
+      "cardTitle": "Google Analytics 4",
+      "cardSub": "Measurement ID",
+      "desc": "Enter your G-XXXXXXXXXX Measurement ID from your Google Analytics property. The tracking script loads automatically on every page once saved.",
+      "save": "Save",
+      "saving": "Saving…",
+      "delete": "Delete",
+      "deleting": "Deleting…",
+      "saveError": "Failed to save. Try again.",
+      "deleteError": "Failed to delete. Try again.",
+      "saveSuccess": "Saved — tracking is now active.",
+      "noId": "No Measurement ID set — tracking is disabled."
+    },
+    "emails": {
+      "eyebrow": "Inbox",
+      "heading": "Contact",
+      "headingFade": "Messages.",
+      "body": "All messages received through the contact form.",
+      "loading": "Loading messages…",
+      "load": "Load messages",
+      "retry": "Try again",
+      "loadError": "Failed to load emails. Try again.",
+      "empty": "No emails found.",
+      "emptyTitle": "Inbox is clear",
+      "emptySubtitle": "Contact form messages will appear here once someone reaches out.",
+      "messages": "messages",
+      "colSender": "Sender",
+      "colSubject": "Subject",
+      "colFrom": "From",
+      "colDate": "Date",
+      "colStatus": "Status",
+      "noSubject": "(no subject)",
+      "noBody": "No message content available.",
+      "reply": "Reply",
+      "replySend": "Send",
+      "replyCancel": "Cancel",
+      "replyPlaceholder": "Type your reply…",
+      "replySending": "Sending…",
+      "replyError": "Failed to send reply. Please try again.",
+      "replyYou": "You",
+      "replied": "Replied",
+      "page": "Page",
+      "prev": "Prev",
+      "next": "Next",
+      "deleteConfirm": "Remove this message?",
+      "deleteBtn": "Remove",
+      "blockSender": "Block sender",
+      "blockConfirm": "Block this sender?",
+      "blockBtn": "Block",
+      "blockError": "Failed to block sender. Please try again."
+    },
+    "profile": {
+      "eyebrow": "Account",
+      "heading": "Your",
+      "headingFade": "Profile.",
+      "body": "Update your display name or change your password at any time.",
+      "nameTitle": "Full name",
+      "nameSub": "Displayed in the dashboard header.",
+      "namePlaceholder": "Your full name",
+      "nameMinError": "Name must be at least 2 characters.",
+      "nameSaved": "Saved successfully.",
+      "passwordTitle": "Change password",
+      "passwordSub": "Min. 8 characters with at least one letter and one number.",
+      "currentPwd": "Current password",
+      "currentPwdWrong": "Current password is incorrect.",
+      "newPwd": "New password",
+      "newPwdTooShort": "Too short — {{count}}/8 characters",
+      "newPwdWeak": "Must contain at least one letter and one number.",
+      "confirmPwd": "Confirm new password",
+      "pwdMismatch": "Passwords do not match.",
+      "pwdSameAsOld": "New password must differ from your current one.",
+      "next": "Next",
+      "checking": "Checking…",
+      "save": "Save",
+      "saving": "Saving…",
+      "pwdSuccess": "Password updated successfully.",
+      "error": "Something went wrong. Try again."
+    },
+    "comingSoon": {
+      "eyebrow": "Configuration",
+      "heading": "Coming",
+      "headingFade": "Soon.",
+      "body": "Enable coming soon mode to redirect all visitors to a pre-launch page while you prepare.",
+      "enabledLabel": "Coming soon mode",
+      "enabledOn": "Active — visitors are redirected to the coming soon page",
+      "enabledOff": "Inactive — the site is fully accessible",
+      "sectionContent": "Content",
+      "sectionSocials": "Social links",
+      "title": "Title",
+      "desc": "Description",
+      "launchDate": "Launch date & time",
+      "socialGithub": "GitHub URL",
+      "socialLinkedin": "LinkedIn URL",
+      "socialInstagram": "Instagram URL",
+      "save": "Save",
+      "saving": "Saving…",
+      "saveSuccess": "Settings saved.",
+      "saveError": "Failed to save. Try again.",
+      "subsEyebrow": "Subscribers",
+      "subsHeading": "Email Subscriptions",
+      "subsCount": "subscribers",
+      "subsEmpty": "No subscribers yet.",
+      "subsColEmail": "Email",
+      "subsColDate": "Subscribed"
+    },
+    "subscribers": {
+      "eyebrow": "Subscribers",
+      "heading": "Email",
+      "headingFade": "Subscriptions.",
+      "body": "Everyone who subscribed during the coming soon period.",
+      "count": "subscribers",
+      "loading": "Loading…",
+      "loadError": "Failed to load subscribers. Try again.",
+      "emptyTitle": "No subscribers yet.",
+      "emptyBody": "Once visitors subscribe on the coming soon page, they'll appear here.",
+      "colEmail": "Email",
+      "colIp": "IP Address",
+      "colDate": "Subscribed",
+      "remove": "Remove subscriber",
+      "confirmDelete": "Delete",
+      "cancelDelete": "Cancel",
+      "export": "Export CSV",
+      "sendEmail": "Send",
+      "of": "of",
+      "composeEyebrow": "Newsletter",
+      "composeSubject": "Subject",
+      "composePreviewText": "Preview Text",
+      "composeEyebrowLabel": "Eyebrow Label",
+      "composeHeadline": "Headline",
+      "composeIntro": "Intro",
+      "composeContentTitle": "Content Title",
+      "composeContent": "Content",
+      "composeButtonText": "Button Text",
+      "composeButtonUrl": "Button URL",
+      "composeFooterBrand": "Footer Brand",
+      "composeWebsite": "Website",
+      "composeFooterNote": "Footer Note",
+      "composeSubscriptionText": "Subscription Text",
+      "composeSend": "Send Email",
+      "composeSending": "Sending…",
+      "composeCancel": "Cancel",
+      "composeError": "Failed to send. Try again."
+    }
+  },
+  "footer": {
+    "tagline1": "Systems designed with precision.",
+    "tagline2": "Built for scale.",
+    "tagline3": "Remembered for reliability.",
+    "subBrand": "Precision • Systems • Trust"
+  },
+  "cta": {
+    "heading": "Let's Build Something Meaningful.",
+    "body": "Looking for a SaaS engineer, a mobile application developer, or a long-term architecture partner? Let's build something that scales — with precision, structure, and serious engineering behind it.",
+    "button": "Start a Conversation"
+  },
+  "workProject": {
+    "back": "Back to Home",
+    "processLabel": "How It Was Built — Step by Step",
+    "outcomeLabel": "Final Delivery"
+  },
+  "projects": {
+    "operational-intelligence": {
+      "category": "Systems Infrastructure",
+      "title": "Operational Intelligence Platform",
+      "description": "A high-performance business infrastructure engineered for real-time operational visibility, scalable workflow automation, and structured analytics across complex operations.",
+      "tags": ["Scalability", "Workflow Automation", "Analytics", "Architecture"],
+      "cta": "See how it works",
+      "outcome": "A production-ready platform serving real-time operational data across multiple departments — reducing manual reporting by over 80% and enabling data-driven decisions at scale.",
+      "steps": [
+        { "title": "Discovery & Requirements", "desc": "Deep-dive sessions to map current operations, identify bottlenecks, define data sources, and align on KPIs. Output: a full requirements document and agreed system scope that guides everything that follows." },
+        { "title": "Architecture Design", "desc": "Designing the full system blueprint — database schemas, API contracts, service boundaries, and data flow diagrams. Every architectural decision is documented, justified, and reviewed before a single line of code is written." },
+        { "title": "Backend & API Development", "desc": "Building the core API layer, data ingestion pipelines, and business logic. Structured around RESTful principles with optimized queries, clean separation of concerns, and a predictable response contract." },
+        { "title": "Dashboard & Analytics UI", "desc": "Building the real-time analytics interface — charts, filters, summary cards, and drill-down views. Designed for operational clarity: fast to read, easy to navigate, and built to handle live data without lag." },
+        { "title": "Workflow Automation Engine", "desc": "Implementing automated triggers, scheduled jobs, alert systems, and event-driven workflows that reduce manual intervention across the operation. Rules are configurable without code changes." },
+        { "title": "Testing & Quality Assurance", "desc": "Comprehensive testing across every layer — unit tests, integration tests, load testing, and edge case validation. No feature ships without verified, reproducible behavior under real conditions." },
+        { "title": "Deployment & Handover", "desc": "CI/CD pipeline setup, infrastructure provisioning, production deployment, and full technical documentation. The system is monitored, stable, and fully handed over before the project closes." }
+      ]
+    },
+    "saas-platform": {
+      "category": "SaaS Engineering",
+      "title": "High-Performance SaaS Platform",
+      "description": "Full-stack SaaS platform built with multi-tenant architecture, subscription billing, role-based access control, and long-term product scalability at its core.",
+      "tags": ["SaaS", "Multi-tenant", "Subscriptions", "Business Logic"],
+      "cta": "Explore the platform",
+      "outcome": "A fully operational SaaS product launched on schedule — supporting multiple subscription tiers, fully isolated tenant data, and a clean onboarding flow ready for customer acquisition from day one.",
+      "steps": [
+        { "title": "Product Scoping", "desc": "Defining user roles, subscription tiers, core feature set, and business rules before writing any code. Output: a clear product specification that guides every technical decision and prevents scope drift." },
+        { "title": "Multi-tenant Architecture", "desc": "Designing isolated data schemas and tenant routing from the ground up. Every tenant's data is fully separated — with shared infrastructure managed cleanly beneath without leaking data across boundaries." },
+        { "title": "Authentication & Access Control", "desc": "Implementing JWT-based authentication, role-based permissions (admin, member, viewer), session management, and secure API access across all tenant contexts. Security is not an afterthought — it is the foundation." },
+        { "title": "Subscription & Billing", "desc": "Stripe integration for plan management, checkout flows, webhook handling, invoice generation, and upgrade/downgrade logic. Billing that works reliably in the background and handles edge cases correctly." },
+        { "title": "Core Product Features", "desc": "Building the primary product functionality — the features users actually pay for. Prioritized by impact, built with clean data models, and structured for long-term maintainability as the product grows." },
+        { "title": "Performance & Security Hardening", "desc": "Query optimization, caching layers, rate limiting, input validation, and a full security audit. The platform is built to handle real production traffic without degrading under load." },
+        { "title": "Launch & Onboarding", "desc": "Beta rollout, onboarding flow refinement, production deployment, and post-launch monitoring. Handed over with full documentation, environment configs, and a system that is stable on day one." }
+      ]
+    }
+  },
+  "home": {
+    "hello": "Hello",
+    "seo": {
+      "title": "ET-TALIBI — Engineering Digital Systems",
+      "description": "Full-stack software engineer specializing in SaaS products, backend systems, web apps, and scalable digital infrastructure. Based online, working globally.",
+      "canonical": "https://ettalibi.com"
+    }
+  },
+  "comingSoon": {
+    "badge": "Coming Soon",
+    "defaultTitle": "Something Big is Coming",
+    "defaultDesc": "We\u2019re working hard on something amazing. Stay tuned and be the first to know.",
+    "countdown": {
+      "days": "Days",
+      "hours": "Hrs",
+      "minutes": "Min",
+      "seconds": "Sec"
+    },
+    "subscribe": {
+      "placeholder": "Enter your email address",
+      "button": "Notify Me",
+      "sending": "Sending\u2026",
+      "success": "You\u2019re on the list! We\u2019ll notify you at launch.",
+      "alreadySubscribed": "You\u2019re already subscribed.",
+      "error": "Something went wrong. Please try again."
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "body": "The page you\u2019re looking for doesn\u2019t exist or has been moved.",
+    "cta": "Back to Home"
+  },
+  "legal": {
+    "label": "Legal",
+    "contact": {
+      "heading": "Contact",
+      "body": "If you have any questions, you may contact:",
+      "email": "contact@ettalibi.com"
+    },
+    "cookieBanner": {
+      "title": "We use cookies",
+      "body": "This site uses cookies and analytics to improve performance and understand how visitors interact with the website. No personal data is sold or shared.",
+      "learnMore": "Cookie Policy",
+      "accept": "Accept all",
+      "decline": "Essential only"
+    },
+    "privacy": {
+      "seo": {
+        "title": "Privacy Policy — ET-TALIBI",
+        "description": "This Privacy Policy explains how ETTALIBI collects, uses, and protects information when you use this website or submit a contact request."
+      },
+      "title": "Privacy Policy",
+      "intro": "This Privacy Policy explains how ETTALIBI collects, uses, and protects information when you use this website, submit a contact request, or interact with our digital services.",
+      "contactHeading": "9. Contact",
+      "sections": [
+        { "title": "1. Information We Collect", "body": "When you contact us through the website, we may collect personal information including:", "list": ["Your name", "Email address", "Company name (if provided)", "Project details or messages you submit"], "footer": "We only collect information that you voluntarily provide through the contact form or direct communication." },
+        { "title": "2. How Your Information Is Used", "body": "Information submitted through this website may be used to:", "list": ["Respond to inquiries and project requests", "Communicate regarding services or collaboration", "Improve website functionality and user experience", "Maintain website security and operational reliability"], "footer": "Your information is never sold, rented, or shared with third parties for advertising purposes." },
+        { "title": "3. Analytics & Usage Data", "body": "This website uses Google Analytics to understand how visitors interact with the website and to improve overall performance and usability. Google Analytics may collect anonymized technical information such as:", "list": ["Pages visited", "Browser type and device information", "Approximate geographic location", "Time spent on pages", "Traffic sources and interactions"], "footer": "This information is collected in aggregate form and is not used to personally identify visitors." },
+        { "title": "4. Cookies", "body": "This website may use cookies and similar technologies to improve website functionality, analyze traffic, and enhance user experience.", "footer": "By continuing to use the website, you consent to the use of cookies where applicable." },
+        { "title": "5. Data Protection", "body": "Reasonable technical and organizational measures are implemented to protect submitted information against unauthorized access, misuse, or disclosure.", "footer": "However, no method of data transmission or online storage can be guaranteed to be completely secure." },
+        { "title": "6. Third-Party Services", "body": "This website may use trusted third-party services including analytics, hosting infrastructure, email providers, or embedded content required for website functionality.", "footer": "These services may process limited technical information necessary to operate the platform securely and efficiently." },
+        { "title": "7. Your Rights", "body": "You may request access, correction, or deletion of personal information previously submitted through the website.", "footer": "To make such a request, please contact us directly using the contact information provided on the website." },
+        { "title": "8. Changes to This Policy", "body": "This Privacy Policy may be updated periodically to reflect changes in legal requirements, technologies, or website functionality.", "footer": "Continued use of the website after updates constitutes acceptance of the revised policy." }
+      ]
+    },
+    "terms": {
+      "seo": {
+        "title": "Terms & Conditions — ET-TALIBI",
+        "description": "These Terms & Conditions govern the use of the ETTALIBI website and any related services, communications, or digital interactions."
+      },
+      "title": "Terms & Conditions",
+      "intro": "These Terms & Conditions govern the use of the ETTALIBI website and any related services, communications, or digital interactions associated with this platform.",
+      "contactHeading": "12. Contact",
+      "sections": [
+        { "title": "1. Acceptance of Terms", "body": "By accessing or using this website, you agree to comply with these Terms & Conditions and all applicable laws and regulations.", "footer": "If you do not agree with any part of these terms, you should not use this website or its services." },
+        { "title": "2. Website Purpose", "body": "This website is intended to present digital engineering services, business infrastructure solutions, software systems, and related professional information associated with ETTALIBI.", "footer": "Information published on this website is provided for general informational and business communication purposes only." },
+        { "title": "3. Intellectual Property", "body": "All website content including text, branding, graphics, layouts, visual assets, design systems, and custom code are the intellectual property of ETTALIBI unless otherwise stated.", "footer": "No content may be copied, reproduced, redistributed, or reused without prior written permission." },
+        { "title": "4. Contact Forms & Communications", "body": "By submitting information through the contact form, you confirm that the information provided is accurate and does not violate any applicable laws or third-party rights.", "footer": "Submitting a contact request does not establish a contractual relationship, partnership, or guarantee of service availability. ETTALIBI reserves the right to decline inquiries, project requests, or communications at its discretion." },
+        { "title": "5. Acceptable Use", "body": "You agree not to misuse this website or attempt to:", "list": ["Gain unauthorized access to systems or infrastructure", "Disrupt website functionality or security", "Submit malicious code, spam, or harmful content", "Use the website for unlawful or fraudulent purposes"], "footer": "Any abusive or malicious activity may result in restricted access and, where appropriate, legal action." },
+        { "title": "6. Third-Party Services", "body": "This website may rely on third-party platforms and services including analytics providers, hosting infrastructure, email services, or embedded technologies.", "footer": "ETTALIBI is not responsible for the policies, availability, or practices of third-party services beyond direct operational control." },
+        { "title": "7. Service Availability", "body": "While reasonable efforts are made to maintain website availability and reliability, uninterrupted access cannot be guaranteed at all times.", "footer": "Temporary interruptions may occur due to maintenance, infrastructure updates, technical issues, or circumstances outside operational control." },
+        { "title": "8. Limitation of Liability", "body": "ETTALIBI shall not be held liable for any indirect, incidental, consequential, or business-related damages arising from the use of this website or reliance on its content.", "footer": "All website content is provided \"as is\" without warranties of any kind, express or implied." },
+        { "title": "9. Privacy", "body": "Use of this website is also governed by the Privacy Policy, including information regarding analytics, cookies, and submitted contact data." },
+        { "title": "10. Modifications", "body": "These Terms & Conditions may be updated or modified at any time without prior notice.", "footer": "Continued use of the website after updates constitutes acceptance of the revised terms." },
+        { "title": "11. Governing Law", "body": "These Terms & Conditions shall be governed by and interpreted in accordance with applicable laws and regulations." }
+      ]
+    },
+    "cookies": {
+      "seo": {
+        "title": "Cookies Policy — ET-TALIBI",
+        "description": "This Cookies Policy explains how ETTALIBI uses cookies and similar technologies to improve website functionality and analyze traffic."
+      },
+      "title": "Cookies Policy",
+      "intro": "This Cookies Policy explains how ETTALIBI uses cookies and similar technologies to improve website functionality, analyze traffic, and enhance the browsing experience.",
+      "contactHeading": "6. Contact",
+      "sections": [
+        { "title": "1. What Are Cookies?", "body": "Cookies are small text files stored on your device when you visit a website. They help websites function properly, remember preferences, and collect usage information." },
+        { "title": "2. How Cookies Are Used", "body": "This website may use cookies and similar technologies to:", "list": ["Analyze website traffic and visitor behavior", "Improve website performance and usability", "Maintain security and operational reliability", "Remember certain user preferences where applicable"] },
+        { "title": "3. Google Analytics", "body": "This website uses Google Analytics, a web analytics service provided by Google, to better understand how visitors interact with the website. Google Analytics may collect anonymized information including:", "list": ["Pages visited", "Time spent on pages", "Device and browser information", "Approximate geographic location", "Traffic sources and interactions"], "footer": "This information is used only to improve website quality, performance, and user experience." },
+        { "title": "4. Managing Cookies", "body": "Most web browsers allow you to manage or disable cookies through browser settings.", "footer": "Disabling cookies may affect certain functionality or user experience features on the website." },
+        { "title": "5. Policy Updates", "body": "This Cookies Policy may be updated periodically to reflect changes in technology, analytics tools, or legal requirements." }
+      ]
+    }
+  }
+}

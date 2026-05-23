@@ -1,0 +1,507 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact",
+    "work": "Projets",
+    "systems": "Systèmes",
+    "insights": "Réflexions",
+    "cta": "Démarrer une conversation",
+    "dashboard": "Tableau de bord",
+    "ariaMain": "Navigation principale",
+    "ariaToggle": "Ouvrir le menu"
+  },
+  "hero": {
+    "badge": "Ingénierie de Systèmes Numériques",
+    "heading": "Concevoir des systèmes numériques évolutifs avec",
+    "headingFade": "précision, structure et vision à long terme.",
+    "body": "Je conçois et développe des plateformes SaaS évolutives, des applications mobiles, des systèmes d'automatisation des workflows et des logiciels métiers sur mesure — pensés pour la clarté opérationnelle, la maintenabilité à long terme et la performance produit.",
+    "cta1": "Voir les projets sélectionnés",
+    "cta2": "Explorer les systèmes",
+    "dashboardTitle": "Vue d'ensemble du système",
+    "dashboardStatus": "Tous les systèmes opérationnels",
+    "dashboardPerfLabel": "Performance du système",
+    "dashboardPerfSub": "Disponibilité sur l'ensemble des nœuds d'infrastructure",
+    "stats": [
+      { "label": "Architecture", "value": "Évolutive" },
+      { "label": "Exécution", "value": "Structurée" },
+      { "label": "Automatisation", "value": "Active" },
+      { "label": "Couche logique", "value": "Structurée" }
+    ],
+    "tags": ["Performance avant tout", "Précision", "Fiabilité à long terme"]
+  },
+  "systems": {
+    "label": "Expertise Systèmes",
+    "heading": "Plateformes SaaS, applications mobiles, automatisation des workflows et logiciels métiers conçus pour des performances durables.",
+    "items": [
+      { "title": "Architecture des systèmes", "desc": "Conception d'architectures web et mobiles évolutives axées sur la performance, la maintenabilité et la clarté opérationnelle à long terme pour des produits métiers complexes." },
+      { "title": "Ingénierie SaaS", "desc": "Développement de plateformes SaaS de bout en bout — workflows d'abonnement, architecture multi-tenant, systèmes de facturation et infrastructure produit évolutive." },
+      { "title": "Applications mobiles", "desc": "Développement d'applications mobiles haute performance axé sur la fiabilité, une expérience utilisateur fluide et une intégration transparente avec les systèmes backend." },
+      { "title": "Systèmes d'automatisation", "desc": "Automatisation des workflows et systèmes de processus métiers conçus pour éliminer les tâches manuelles et améliorer l'efficacité opérationnelle à grande échelle." },
+      { "title": "Systèmes frontend", "desc": "Interfaces web haute performance et systèmes de tableaux de bord conçus pour la clarté, l'ergonomie et des expériences produit digitales de qualité." },
+      { "title": "Infrastructure backend", "desc": "Écosystèmes backend fiables — API REST, couches logiques métiers, contrôle d'accès basé sur les rôles et architecture de données structurée prête à évoluer." }
+    ]
+  },
+  "insights": {
+    "label": "Notes d'ingénierie",
+    "heading": "Réflexions sur les systèmes, l'architecture et la rigueur du développement numérique.",
+    "notes": [
+      { "cat": "Architecture", "title": "La performance est une décision d'architecture", "desc": "La plupart des systèmes tentent l'optimisation trop tard. La vraie performance commence avec la structure, pas les correctifs." },
+      { "cat": "Pensée systémique", "title": "Les bons systèmes créent de la clarté opérationnelle", "desc": "Des interfaces structurées et une logique propre réduisent la friction, la confusion et la dette technique à long terme." },
+      { "cat": "Philosophie d'ingénierie", "title": "La simplicité exige de la discipline", "desc": "Les systèmes les plus épurés sont souvent le fruit d'une réflexion approfondie et d'une rigueur architecturale assumée." }
+    ]
+  },
+  "philosophy": {
+    "label": "Philosophie d'ingénierie",
+    "lines": [
+      "La performance naît dans l'architecture.",
+      "Les bons systèmes réduisent le chaos.",
+      "La précision construit la confiance.",
+      "La simplicité se construit."
+    ]
+  },
+  "principles": {
+    "label": "Principes d'ingénierie",
+    "workLabel": "Projets sélectionnés",
+    "workHeading": "Systèmes numériques conçus pour la clarté, la robustesse et la fiabilité.",
+    "items": [
+      { "title": "Performance avant tout", "desc": "Chaque décision architecturale est évaluée en fonction de son impact sur la vitesse, la réactivité et la santé à long terme du système." },
+      { "title": "Systèmes structurés", "desc": "La clarté de structure réduit la complexité. Une séparation nette des responsabilités rend les systèmes prévisibles et maintenables." },
+      { "title": "Conçu pour évoluer", "desc": "Les systèmes sont conçus dès le premier jour pour gérer la croissance — en données, en utilisateurs et en complexité opérationnelle — sans tout remettre à plat." },
+      { "title": "Ingénierie de précision", "desc": "Les détails ne sont pas une réflexion après coup. Une logique précise, des interfaces propres et des contrats bien définis définissent la qualité du résultat." },
+      { "title": "Conception guidée par la logique", "desc": "Les fonctionnalités suivent la fonction, pas la mode. Chaque composant justifie sa place par un objectif clair et une valeur mesurable." },
+      { "title": "Fiabilité à long terme", "desc": "La durabilité est conçue, pas supposée. Les systèmes sont construits pour rester stables, compréhensibles et opérationnels dans le temps." }
+    ]
+  },
+  "aboutSection": {
+    "label": "À propos",
+    "heading": "Plus que des interfaces. Des systèmes structurés conçus pour la confiance.",
+    "body": "Je me spécialise dans le développement SaaS full-stack, l'ingénierie d'applications mobiles, l'architecture web évolutive et les logiciels métiers sur mesure. Chaque produit est conçu comme une structure complète — logique claire, infrastructure fiable et maintenabilité à long terme intégrées dès le départ.",
+    "cta": "À propos de l'ingénieur derrière les systèmes"
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Travaillons",
+    "headingFade": "ensemble.",
+    "body": "Vous avez un projet en tête ? Choisissez ce dont vous avez besoin ci-dessous, remplissez quelques informations et je vous répondrai dans les 24 heures.",
+    "form": {
+      "step1Label": "Que recherchez-vous ? (sélectionnez tout ce qui s'applique)",
+      "detailsLabel": "Vos coordonnées",
+      "nameLabel": "Qui êtes-vous ?",
+      "namePlaceholder": "Votre nom ou votre entreprise",
+      "emailLabel": "Comment vous contacter ?",
+      "emailPlaceholder": "votre@email.com",
+      "messageLabel": "Quel est le projet ?",
+      "messagePlaceholder": "Décrivez ce que vous construisez, le problème à résoudre ou où vous êtes bloqué. Plus de détails, mieux c'est.",
+      "personalNote": "Je lis chaque message personnellement.",
+      "replyNote": "Réponse sous 24 heures.",
+      "submit": "Envoyer",
+      "termsCheckPre": "J'ai lu et j'accepte la",
+      "termsPrivacy": "Politique de Confidentialité",
+      "termsAnd": "et les",
+      "termsTerms": "Conditions Générales",
+      "nameMinHint": "Minimum 5 caractères",
+      "messageMinHint": "Minimum 150 caractères",
+      "successHeading": "Message reçu — merci",
+      "successBody": "Je vais examiner votre projet et vous répondre dans les 24 heures.",
+      "successSentTo": "Envoyé à",
+      "successReplyTime": "Réponse attendue",
+      "successReplyValue": "Sous 24 heures",
+      "successReset": "Envoyer un autre message",
+      "emailError": "Entrez une adresse valide — ex. nom@domaine.com"
+    },
+    "services": [
+      { "id": "saas", "title": "Application Web ou Produit SaaS", "desc": "Créer une application web complète avec comptes utilisateurs, abonnements, tableaux de bord et une API." },
+      { "id": "workflow", "title": "Automatisation & Workflows", "desc": "Automatiser les tâches répétitives, connecter vos outils et réduire le travail manuel dans votre équipe." },
+      { "id": "backend", "title": "Backend & API", "desc": "Concevoir la logique serveur, la base de données et les API pour garder votre produit rapide et fiable." },
+      { "id": "interface", "title": "Interface ou Tableau de bord", "desc": "Une interface claire et responsive — panel admin, vue analytique ou expérience web orientée client." },
+      { "id": "biztools", "title": "Outil de gestion métier", "desc": "Logiciel sur mesure pour gérer votre équipe, suivre les opérations et piloter votre activité sereinement." },
+      { "id": "other", "title": "Autre chose", "desc": "Vous avez une idée originale ou vous ne savez pas par où commencer ? Décrivez-la, on trouvera ensemble." }
+    ],
+    "seo": {
+      "title": "Contact — ET-TALIBI | Démarrez votre projet",
+      "description": "Vous avez un projet en tête ? Contactez ET-TALIBI pour des applications web, des produits SaaS, des systèmes backend et de l'ingénierie logicielle sur mesure. Réponse sous 24 heures.",
+      "canonical": "https://ettalibi.com/contact"
+    }
+  },
+  "aboutPage": {
+    "back": "Retour à l'accueil",
+    "portrait": "Portrait",
+    "accentLabel": "Architecture de Systèmes Numériques",
+    "name": "ET-TALIBI",
+    "tagline": "Systèmes · Précision · Fiabilité",
+    "bio1": "Je conçois et développe des systèmes numériques structurés axés sur la clarté opérationnelle, la fiabilité à long terme et la croissance des entreprises. Chaque système est pensé autour de la performance, de la maintenabilité et d'une solidité réelle — pas des tendances éphémères.",
+    "bio2": "Mon travail couvre l'infrastructure SaaS, les plateformes métiers, les tableaux de bord opérationnels, les applications mobiles, les systèmes d'automatisation et l'architecture backend sécurisée — conçus pour accompagner les entreprises dans leur croissance.",
+    "tags": ["Systèmes SaaS", "Infrastructure métier", "Applications mobiles", "Systèmes d'automatisation", "Architecture évolutive"],
+    "expertiseLabel": "Expertise",
+    "expertiseHeading": "Systèmes structurés pour les opérations métiers réelles",
+    "capabilitiesLabel": "Compétences clés",
+    "capabilitiesHeading": "Infrastructure numérique pensée pour les besoins métiers réels",
+    "capabilityTags": ["Plateformes SaaS", "Systèmes de gestion métier", "Tableaux de bord opérationnels", "Applications mobiles multiplateformes", "Infrastructure backend sécurisée", "Architecture API", "Automatisation des workflows", "Infrastructure cloud", "Systèmes multi-tenant", "Workflows entreprise", "Optimisation des performances", "Architecture système", "Logiciels métiers sur mesure", "Interfaces orientées données", "Maintenabilité à long terme"],
+    "philosophyLabel": "Philosophie d'ingénierie",
+    "philosophyHeading": "Les principes derrière chaque système",
+    "opLabel": "Pensée opérationnelle",
+    "opHeading": "Les entreprises n'ont pas besoin de plus de logiciels. Elles ont besoin de meilleurs systèmes.",
+    "opBody1": "La plupart des entreprises souffrent de workflows déconnectés, d'inefficacités opérationnelles et de logiciels non conçus pour leurs opérations réelles.",
+    "opBody2": "Je me concentre sur la création de systèmes numériques structurés qui simplifient les opérations, améliorent la visibilité, renforcent l'infrastructure et soutiennent la croissance et la pérennité de l'entreprise.",
+    "stats": [
+      { "label": "Années de développement de systèmes numériques" },
+      { "label": "Systèmes & plateformes livrés" },
+      { "label": "Secteurs d'activité accompagnés" },
+      { "label": "Conçus pour durer" }
+    ],
+    "expertise": [
+      { "title": "Infrastructure SaaS évolutive", "desc": "Plateformes SaaS multi-tenant avec architecture évolutive, workflows d'abonnement, gestion des accès et stabilité opérationnelle à long terme." },
+      { "title": "Architecture des systèmes métiers", "desc": "Systèmes numériques sur mesure orientés clarté opérationnelle, workflows métiers et infrastructure de croissance à long terme." },
+      { "title": "Tableaux de bord opérationnels", "desc": "Tableaux de bord et systèmes analytiques structurés transformant les données opérationnelles en informations décisionnelles exploitables." },
+      { "title": "Infrastructure backend sécurisée", "desc": "API structurées, architecture de base de données, systèmes d'authentification et services backend évolutifs pour la performance et la fiabilité." },
+      { "title": "Automatisation & Workflows", "desc": "Pipelines d'automatisation et workflows opérationnels qui réduisent les tâches manuelles, améliorent l'efficacité et simplifient les opérations répétitives." },
+      { "title": "Applications multiplateformes", "desc": "Applications web et mobiles haute performance avec architecture frontend évolutive et expériences utilisateur fluides." }
+    ],
+    "philosophy": [
+      { "title": "La structure avant l'échelle", "desc": "Les systèmes évolutifs ne se créent pas par accident. Une architecture solide, une infrastructure claire et une logique opérationnelle robuste sont les fondations de la croissance à long terme." },
+      { "title": "Les systèmes doivent simplifier les activités", "desc": "La technologie doit réduire les frictions opérationnelles, améliorer la visibilité et faciliter la prise de décision — sans créer de complexité inutile." },
+      { "title": "Conçu pour le long terme", "desc": "Chaque plateforme est développée dans une optique d'évolutivité, de maintenabilité et de croissance durable. La fiabilité à long terme est inscrite dans l'architecture elle-même." }
+    ],
+    "seo": {
+      "title": "À propos — ET-TALIBI | Architecture de Systèmes Numériques",
+      "description": "ET-TALIBI conçoit des systèmes numériques évolutifs, une infrastructure opérationnelle et des plateformes métiers sécurisées pour une croissance et une fiabilité à long terme.",
+      "canonical": "https://ettalibi.com/about"
+    }
+  },
+  "login": {
+    "title": "Connexion",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "submitting": "Connexion en cours…",
+    "error": "E-mail ou mot de passe incorrect.",
+    "secureLabel": "Accès sécurisé",
+    "headingFade": "Tableau de bord.",
+    "body": "Entrez vos identifiants pour accéder à l'espace d'administration. Votre session est chiffrée et sécurisée.",
+    "emailPlaceholder": "votre@email.com",
+    "passwordPlaceholder": "••••••••"
+  },
+  "dashboard": {
+    "nav": {
+      "sectionLabel": "Navigation",
+      "analytics": "Google Analytics",
+      "analyticsSub": "Configurer le suivi",
+      "emails": "E-mails",
+      "emailsSub": "Messages de contact",
+      "profile": "Profil",
+      "profileSub": "Nom & mot de passe",
+      "comingSoon": "Bientôt disponible",
+      "comingSoonSub": "Page de lancement",
+      "subscribers": "Abonnés",
+      "subscribersSub": "Liste email"
+    },
+    "header": {
+      "label": "Tableau de bord",
+      "sessionStarted": "Session démarrée le",
+      "signOut": "Déconnexion",
+      "signingOut": "Déconnexion…"
+    },
+    "analytics": {
+      "eyebrow": "Configuration",
+      "heading": "Google",
+      "headingFade": "Analytics.",
+      "body": "Connectez votre propriété GA4 pour suivre automatiquement les visites sur l'ensemble de votre site.",
+      "cardTitle": "Google Analytics 4",
+      "cardSub": "ID de mesure",
+      "desc": "Saisissez votre ID de mesure G-XXXXXXXXXX depuis votre propriété Google Analytics. Le script de suivi se charge automatiquement sur chaque page une fois enregistré.",
+      "save": "Enregistrer",
+      "saving": "Enregistrement…",
+      "delete": "Supprimer",
+      "deleting": "Suppression…",
+      "saveError": "Échec de l'enregistrement. Réessayez.",
+      "deleteError": "Échec de la suppression. Réessayez.",
+      "saveSuccess": "Enregistré — le suivi est maintenant actif.",
+      "noId": "Aucun ID de mesure défini — le suivi est désactivé."
+    },
+    "emails": {
+      "eyebrow": "Boîte de réception",
+      "heading": "Messages",
+      "headingFade": "de contact.",
+      "body": "Tous les messages reçus via le formulaire de contact.",
+      "loading": "Chargement des messages\u2026",
+      "loadError": "Impossible de charger les e-mails. Réessayez.",
+      "empty": "Aucun e-mail trouvé.",
+      "emptyTitle": "La boîte de réception est vide",
+      "emptySubtitle": "Les messages du formulaire de contact apparaîtront ici dès que quelqu'un vous contactera.",
+      "messages": "messages",
+      "colSender": "Expéditeur",
+      "colSubject": "Sujet",
+      "colFrom": "De",
+      "colDate": "Date",
+      "colStatus": "Statut",
+      "noSubject": "(sans objet)",
+      "noBody": "Aucun contenu disponible.",
+      "reply": "Répondre",
+      "replySend": "Envoyer",
+      "replyCancel": "Annuler",
+      "replyPlaceholder": "Tapez votre réponse…",
+      "replySending": "Envoi en cours…",
+      "replyError": "Échec de l'envoi. Veuillez réessayer.",
+      "replyYou": "Vous",
+      "replied": "Répondu",
+      "page": "Page",
+      "prev": "Préc.",
+      "next": "Suiv.",
+      "deleteConfirm": "Supprimer ce message ?",
+      "deleteBtn": "Supprimer",
+      "blockSender": "Bloquer l'expéditeur",
+      "blockConfirm": "Bloquer cet expéditeur ?",
+      "blockBtn": "Bloquer",
+      "blockError": "Impossible de bloquer l'expéditeur. Veuillez réessayer."
+    },
+    "profile": {
+      "eyebrow": "Compte",
+      "heading": "Votre",
+      "headingFade": "Profil.",
+      "body": "Modifiez votre nom affiché ou changez votre mot de passe à tout moment.",
+      "nameTitle": "Nom complet",
+      "nameSub": "Affiché dans l'en-tête du tableau de bord.",
+      "namePlaceholder": "Votre nom complet",
+      "nameMinError": "Le nom doit contenir au moins 2 caractères.",
+      "nameSaved": "Enregistré avec succès.",
+      "passwordTitle": "Changer le mot de passe",
+      "passwordSub": "8 caractères minimum avec au moins une lettre et un chiffre.",
+      "currentPwd": "Mot de passe actuel",
+      "currentPwdWrong": "Le mot de passe actuel est incorrect.",
+      "newPwd": "Nouveau mot de passe",
+      "newPwdTooShort": "Trop court — {{count}}/8 caractères",
+      "newPwdWeak": "Doit contenir au moins une lettre et un chiffre.",
+      "confirmPwd": "Confirmer le nouveau mot de passe",
+      "pwdMismatch": "Les mots de passe ne correspondent pas.",
+      "pwdSameAsOld": "Le nouveau mot de passe doit être différent de l'actuel.",
+      "next": "Suivant",
+      "checking": "Vérification…",
+      "save": "Enregistrer",
+      "saving": "Enregistrement…",
+      "pwdSuccess": "Mot de passe mis à jour avec succès.",
+      "error": "Une erreur est survenue. Réessayez."
+    },
+    "comingSoon": {
+      "eyebrow": "Configuration",
+      "heading": "Bientôt",
+      "headingFade": "Disponible.",
+      "body": "Activez le mode \u00ab bientôt disponible\u00a0\u00bb pour rediriger les visiteurs vers une page de pré-lancement pendant que vous préparez le site.",
+      "enabledLabel": "Mode bientôt disponible",
+      "enabledOn": "Actif \u2014 les visiteurs sont redirigés vers la page de lancement",
+      "enabledOff": "Inactif \u2014 le site est entièrement accessible",
+      "sectionContent": "Contenu",
+      "sectionSocials": "Réseaux sociaux",
+      "title": "Titre",
+      "desc": "Description",
+      "launchDate": "Date et heure de lancement",
+      "socialGithub": "URL GitHub",
+      "socialLinkedin": "URL LinkedIn",
+      "socialInstagram": "URL Instagram",
+      "save": "Enregistrer",
+      "saving": "Enregistrement\u2026",
+      "saveSuccess": "Param\u00e8tres sauvegard\u00e9s.",
+      "saveError": "\u00c9chec de la sauvegarde. R\u00e9essayez.",
+      "subsEyebrow": "Abonn\u00e9s",
+      "subsHeading": "Abonnements Email",
+      "subsCount": "abonn\u00e9s",
+      "subsEmpty": "Aucun abonn\u00e9 pour l\u2019instant.",
+      "subsColEmail": "Email",
+      "subsColDate": "Inscrit le"
+    },
+    "subscribers": {
+      "eyebrow": "Abonnés",
+      "heading": "Abonnements",
+      "headingFade": "Email.",
+      "body": "Toutes les personnes inscrites pendant la période de lancement.",
+      "count": "abonnés",
+      "loading": "Chargement…",
+      "loadError": "Impossible de charger les abonnés. Réessayez.",
+      "emptyTitle": "Aucun abonné pour l'instant.",
+      "emptyBody": "Les visiteurs qui s'inscrivent sur la page de lancement apparaîtront ici.",
+      "colEmail": "Email",
+      "colIp": "Adresse IP",
+      "colDate": "Inscrit le",
+      "remove": "Supprimer l'abonné",
+      "confirmDelete": "Supprimer",
+      "cancelDelete": "Annuler",
+      "export": "Exporter CSV",
+      "sendEmail": "Envoyer",
+      "of": "sur",
+      "composeEyebrow": "Infolettre",
+      "composeSubject": "Sujet",
+      "composePreviewText": "Texte d'aperçu",
+      "composeEyebrowLabel": "Accroche",
+      "composeHeadline": "Titre principal",
+      "composeIntro": "Introduction",
+      "composeContentTitle": "Titre du contenu",
+      "composeContent": "Contenu",
+      "composeButtonText": "Texte du bouton",
+      "composeButtonUrl": "URL du bouton",
+      "composeFooterBrand": "Marque pied de page",
+      "composeWebsite": "Site web",
+      "composeFooterNote": "Note de pied de page",
+      "composeSubscriptionText": "Texte d'abonnement",
+      "composeSend": "Envoyer l'e-mail",
+      "composeSending": "Envoi en cours…",
+      "composeCancel": "Annuler",
+      "composeError": "Échec de l'envoi. Réessayez."
+    }
+  },
+  "footer": {
+    "tagline1": "Systèmes conçus avec précision.",
+    "tagline2": "Construits pour évoluer.",
+    "tagline3": "Reconnu pour sa fiabilité.",
+    "subBrand": "Précision • Systèmes • Confiance"
+  },
+  "cta": {
+    "heading": "Construisons quelque chose de significatif.",
+    "body": "Vous cherchez un ingénieur SaaS, un développeur d'applications mobiles ou un partenaire d'architecture à long terme ? Construisons quelque chose qui évolue — avec précision, structure et une ingénierie sérieuse.",
+    "button": "Démarrer une conversation"
+  },
+  "workProject": {
+    "back": "Retour à l'accueil",
+    "processLabel": "La méthode de réalisation — étape par étape",
+    "outcomeLabel": "Livraison finale"
+  },
+  "projects": {
+    "operational-intelligence": {
+      "category": "Infrastructure systèmes",
+      "title": "Plateforme d'intelligence opérationnelle",
+      "description": "Une infrastructure métier haute performance conçue pour une visibilité opérationnelle en temps réel, l'automatisation évolutive des workflows et des analyses structurées sur des opérations complexes.",
+      "tags": ["Scalabilité", "Automatisation des workflows", "Analytique", "Architecture"],
+      "cta": "Voir comment ça fonctionne",
+      "outcome": "Une plateforme prête pour la production, fournissant des données opérationnelles en temps réel à plusieurs départements — réduisant les rapports manuels de plus de 80 % et permettant des décisions basées sur les données à grande échelle.",
+      "steps": [
+        { "title": "Découverte & Exigences", "desc": "Sessions approfondies pour cartographier les opérations actuelles, identifier les goulots d'étranglement, définir les sources de données et aligner les KPI. Résultat : un document d'exigences complet et un périmètre système validé." },
+        { "title": "Conception de l'architecture", "desc": "Conception du plan système complet — schémas de base de données, contrats API, frontières de services et diagrammes de flux de données. Chaque décision architecturale est documentée et revue avant d'écrire la moindre ligne de code." },
+        { "title": "Développement Backend & API", "desc": "Construction de la couche API principale, des pipelines d'ingestion de données et de la logique métier. Structuré autour des principes RESTful avec des requêtes optimisées et une séparation nette des responsabilités." },
+        { "title": "Interface Tableau de bord & Analytique", "desc": "Construction de l'interface analytique en temps réel — graphiques, filtres, cartes de synthèse et vues détaillées. Conçu pour la clarté opérationnelle : rapide à lire, facile à naviguer, capable de gérer des données en direct sans latence." },
+        { "title": "Moteur d'automatisation des workflows", "desc": "Implémentation de déclencheurs automatisés, tâches planifiées, systèmes d'alertes et workflows événementiels qui réduisent l'intervention manuelle. Les règles sont configurables sans modification du code." },
+        { "title": "Tests & Assurance qualité", "desc": "Tests complets sur toutes les couches — tests unitaires, d'intégration, de charge et validation des cas limites. Aucune fonctionnalité n'est livrée sans comportement vérifié et reproductible dans des conditions réelles." },
+        { "title": "Déploiement & Transfert", "desc": "Configuration du pipeline CI/CD, provisionnement de l'infrastructure, déploiement en production et documentation technique complète. Le système est surveillé, stable et entièrement livré avant la clôture du projet." }
+      ]
+    },
+    "saas-platform": {
+      "category": "Ingénierie SaaS",
+      "title": "Plateforme SaaS haute performance",
+      "description": "Plateforme SaaS full-stack avec architecture multi-tenant, facturation par abonnement, contrôle d'accès basé sur les rôles et scalabilité produit à long terme.",
+      "tags": ["SaaS", "Multi-tenant", "Abonnements", "Logique métier"],
+      "cta": "Explorer la plateforme",
+      "outcome": "Un produit SaaS pleinement opérationnel lancé dans les délais — supportant plusieurs niveaux d'abonnement, des données client entièrement isolées et un parcours d'intégration prêt à l'acquisition dès le premier jour.",
+      "steps": [
+        { "title": "Cadrage produit", "desc": "Définition des rôles utilisateurs, des niveaux d'abonnement, du périmètre fonctionnel principal et des règles métiers avant d'écrire du code. Résultat : une spécification produit claire qui guide chaque décision technique et prévient la dérive de périmètre." },
+        { "title": "Architecture multi-tenant", "desc": "Conception de schémas de données isolés et du routage tenant dès le départ. Les données de chaque tenant sont entièrement séparées — avec une infrastructure partagée gérée proprement en dessous, sans fuite de données entre les frontières." },
+        { "title": "Authentification & Contrôle d'accès", "desc": "Implémentation de l'authentification JWT, des permissions basées sur les rôles (admin, membre, lecteur), de la gestion des sessions et de l'accès API sécurisé dans tous les contextes tenant. La sécurité est le fondement, pas un ajout." },
+        { "title": "Abonnement & Facturation", "desc": "Intégration Stripe pour la gestion des plans, les flux de paiement, la gestion des webhooks, la génération de factures et la logique de montée/descente en gamme. Une facturation qui fonctionne de manière fiable en arrière-plan et gère correctement les cas limites." },
+        { "title": "Fonctionnalités produit principales", "desc": "Développement des fonctionnalités produit principales — celles pour lesquelles les utilisateurs paient réellement. Priorisées par impact, construites avec des modèles de données propres et structurées pour la maintenabilité à long terme." },
+        { "title": "Performance & Renforcement de la sécurité", "desc": "Optimisation des requêtes, couches de cache, limitation du débit, validation des entrées et audit de sécurité complet. La plateforme est conçue pour gérer le trafic de production réel sans se dégrader sous charge." },
+        { "title": "Lancement & Intégration client", "desc": "Déploiement bêta, affinage du parcours d'intégration, déploiement en production et surveillance post-lancement. Livré avec une documentation complète, les configurations d'environnement et un système stable dès le premier jour." }
+      ]
+    }
+  },
+  "home": {
+    "hello": "Bonjour",
+    "seo": {
+      "title": "ET-TALIBI — Ingénierie de Systèmes Numériques",
+      "description": "Ingénieur logiciel full-stack spécialisé dans les produits SaaS, les systèmes backend, les applications web et l'infrastructure numérique évolutive. Disponible en ligne, actif à l'international.",
+      "canonical": "https://ettalibi.com"
+    }
+  },
+  "comingSoon": {
+    "badge": "Bientôt disponible",
+    "defaultTitle": "Quelque chose de grand arrive",
+    "defaultDesc": "Nous travaillons dur pour vous offrir quelque chose d\u2019incroyable. Restez à l\u2019écoute.",
+    "countdown": {
+      "days": "Jours",
+      "hours": "Hrs",
+      "minutes": "Min",
+      "seconds": "Sec"
+    },
+    "subscribe": {
+      "placeholder": "Entrez votre adresse email",
+      "button": "Me notifier",
+      "sending": "Envoi\u2026",
+      "success": "Vous \u00eates inscrit(e) ! Nous vous notifierons au lancement.",
+      "alreadySubscribed": "Vous \u00eates d\u00e9j\u00e0 inscrit(e).",
+      "error": "Une erreur est survenue. Veuillez r\u00e9essayer."
+    }
+  },
+  "notFound": {
+    "title": "Page Introuvable",
+    "body": "La page que vous recherchez n\u2019existe pas ou a \u00e9t\u00e9 d\u00e9plac\u00e9e.",
+    "cta": "Retour \u00e0 l\u2019accueil"
+  },
+  "legal": {
+    "label": "Légal",
+    "contact": {
+      "heading": "Contact",
+      "body": "Pour toute question, vous pouvez nous contacter :",
+      "email": "contact@ettalibi.com"
+    },
+    "cookieBanner": {
+      "title": "Nous utilisons des cookies",
+      "body": "Ce site utilise des cookies et des outils d'analyse pour améliorer les performances et comprendre comment les visiteurs interagissent avec le site. Aucune donnée personnelle n'est vendue ou partagée.",
+      "learnMore": "Politique des cookies",
+      "accept": "Tout accepter",
+      "decline": "Essentiels uniquement"
+    },
+    "privacy": {
+      "seo": {
+        "title": "Politique de Confidentialité — ET-TALIBI",
+        "description": "Cette Politique de Confidentialité explique comment ETTALIBI collecte, utilise et protège les informations lorsque vous utilisez ce site web."
+      },
+      "title": "Politique de Confidentialité",
+      "intro": "Cette Politique de Confidentialité explique comment ETTALIBI collecte, utilise et protège les informations lorsque vous utilisez ce site web, soumettez une demande de contact ou interagissez avec nos services numériques.",
+      "contactHeading": "9. Contact",
+      "sections": [
+        { "title": "1. Informations collectées", "body": "Lorsque vous nous contactez via le site web, nous pouvons collecter des informations personnelles, notamment :", "list": ["Votre nom", "Adresse e-mail", "Nom de l'entreprise (si fourni)", "Détails du projet ou messages soumis"], "footer": "Nous collectons uniquement les informations que vous fournissez volontairement via le formulaire de contact ou par communication directe." },
+        { "title": "2. Utilisation de vos informations", "body": "Les informations soumises via ce site web peuvent être utilisées pour :", "list": ["Répondre aux demandes et aux projets", "Communiquer concernant les services ou les collaborations", "Améliorer les fonctionnalités et l'expérience utilisateur du site", "Maintenir la sécurité et la fiabilité opérationnelle du site"], "footer": "Vos informations ne sont jamais vendues, louées ou partagées avec des tiers à des fins publicitaires." },
+        { "title": "3. Données analytiques et d'utilisation", "body": "Ce site utilise Google Analytics pour comprendre comment les visiteurs interagissent avec le site et améliorer ses performances. Google Analytics peut collecter des informations techniques anonymisées telles que :", "list": ["Pages visitées", "Type de navigateur et informations sur l'appareil", "Localisation géographique approximative", "Temps passé sur les pages", "Sources de trafic et interactions"], "footer": "Ces informations sont collectées sous forme agrégée et ne sont pas utilisées pour identifier personnellement les visiteurs." },
+        { "title": "4. Cookies", "body": "Ce site peut utiliser des cookies et des technologies similaires pour améliorer les fonctionnalités du site, analyser le trafic et améliorer l'expérience utilisateur.", "footer": "En continuant à utiliser le site, vous consentez à l'utilisation de cookies le cas échéant." },
+        { "title": "5. Protection des données", "body": "Des mesures techniques et organisationnelles raisonnables sont mises en œuvre pour protéger les informations soumises contre tout accès non autorisé, toute utilisation abusive ou divulgation.", "footer": "Cependant, aucune méthode de transmission de données ou de stockage en ligne ne peut être garantie comme étant totalement sécurisée." },
+        { "title": "6. Services tiers", "body": "Ce site peut utiliser des services tiers de confiance, notamment des fournisseurs d'analyses, d'hébergement, de messagerie ou de contenu intégré nécessaires au fonctionnement du site.", "footer": "Ces services peuvent traiter des informations techniques limitées nécessaires au fonctionnement sécurisé et efficace de la plateforme." },
+        { "title": "7. Vos droits", "body": "Vous pouvez demander l'accès, la correction ou la suppression des informations personnelles précédemment soumises via le site.", "footer": "Pour effectuer une telle demande, veuillez nous contacter directement via les coordonnées fournies sur le site." },
+        { "title": "8. Modifications de cette politique", "body": "Cette Politique de Confidentialité peut être mise à jour périodiquement pour refléter les changements légaux, technologiques ou liés aux fonctionnalités du site.", "footer": "L'utilisation continue du site après les mises à jour constitue une acceptation de la politique révisée." }
+      ]
+    },
+    "terms": {
+      "seo": {
+        "title": "Conditions Générales — ET-TALIBI",
+        "description": "Ces Conditions Générales régissent l'utilisation du site web ETTALIBI et de tous les services, communications ou interactions numériques associés."
+      },
+      "title": "Conditions Générales",
+      "intro": "Ces Conditions Générales régissent l'utilisation du site web ETTALIBI et de tous les services, communications ou interactions numériques associés à cette plateforme.",
+      "contactHeading": "12. Contact",
+      "sections": [
+        { "title": "1. Acceptation des conditions", "body": "En accédant à ce site ou en l'utilisant, vous acceptez de vous conformer à ces Conditions Générales et à toutes les lois et réglementations applicables.", "footer": "Si vous n'acceptez pas une partie de ces conditions, vous ne devez pas utiliser ce site ni ses services." },
+        { "title": "2. Objectif du site", "body": "Ce site est destiné à présenter des services d'ingénierie numérique, des solutions d'infrastructure commerciale, des systèmes logiciels et des informations professionnelles associées à ETTALIBI.", "footer": "Les informations publiées sur ce site sont fournies uniquement à des fins d'information générale et de communication commerciale." },
+        { "title": "3. Propriété intellectuelle", "body": "Tout le contenu du site, y compris les textes, la marque, les graphiques, les mises en page, les éléments visuels, les systèmes de design et le code personnalisé, est la propriété intellectuelle d'ETTALIBI, sauf mention contraire.", "footer": "Aucun contenu ne peut être copié, reproduit, redistribué ou réutilisé sans autorisation écrite préalable." },
+        { "title": "4. Formulaires de contact et communications", "body": "En soumettant des informations via le formulaire de contact, vous confirmez que les informations fournies sont exactes et ne violent aucune loi applicable ni aucun droit de tiers.", "footer": "La soumission d'une demande de contact n'établit pas de relation contractuelle, de partenariat ou de garantie de disponibilité des services. ETTALIBI se réserve le droit de refuser des demandes, projets ou communications à sa discrétion." },
+        { "title": "5. Utilisation acceptable", "body": "Vous acceptez de ne pas faire un usage abusif de ce site ni de tenter de :", "list": ["Accéder de manière non autorisée aux systèmes ou à l'infrastructure", "Perturber les fonctionnalités ou la sécurité du site", "Soumettre du code malveillant, du spam ou du contenu nuisible", "Utiliser le site à des fins illégales ou frauduleuses"], "footer": "Toute activité abusive ou malveillante peut entraîner un accès restreint et, le cas échéant, des poursuites judiciaires." },
+        { "title": "6. Services tiers", "body": "Ce site peut s'appuyer sur des plateformes et services tiers, notamment des fournisseurs d'analyses, d'hébergement, de messagerie ou de technologies intégrées.", "footer": "ETTALIBI n'est pas responsable des politiques, de la disponibilité ou des pratiques des services tiers hors de son contrôle opérationnel direct." },
+        { "title": "7. Disponibilité du service", "body": "Bien que des efforts raisonnables soient déployés pour maintenir la disponibilité et la fiabilité du site, un accès ininterrompu ne peut être garanti à tout moment.", "footer": "Des interruptions temporaires peuvent survenir en raison de maintenances, de mises à jour d'infrastructure, de problèmes techniques ou de circonstances hors contrôle." },
+        { "title": "8. Limitation de responsabilité", "body": "ETTALIBI ne saurait être tenue responsable de tout dommage indirect, accessoire, consécutif ou commercial résultant de l'utilisation de ce site ou de la confiance accordée à son contenu.", "footer": "Tout le contenu du site est fourni \u00ab en l'état \u00bb sans garanties d'aucune sorte, expresses ou implicites." },
+        { "title": "9. Confidentialité", "body": "L'utilisation de ce site est également régie par la Politique de Confidentialité, incluant les informations sur les analyses, les cookies et les données de contact soumises." },
+        { "title": "10. Modifications", "body": "Ces Conditions Générales peuvent être mises à jour ou modifiées à tout moment sans préavis.", "footer": "L'utilisation continue du site après les mises à jour constitue une acceptation des conditions révisées." },
+        { "title": "11. Droit applicable", "body": "Ces Conditions Générales sont régies et interprétées conformément aux lois et réglementations applicables." }
+      ]
+    },
+    "cookies": {
+      "seo": {
+        "title": "Politique de Cookies — ET-TALIBI",
+        "description": "Cette Politique de Cookies explique comment ETTALIBI utilise les cookies et technologies similaires pour améliorer les fonctionnalités du site et analyser le trafic."
+      },
+      "title": "Politique de Cookies",
+      "intro": "Cette Politique de Cookies explique comment ETTALIBI utilise les cookies et technologies similaires pour améliorer les fonctionnalités du site, analyser le trafic et améliorer l'expérience de navigation.",
+      "contactHeading": "6. Contact",
+      "sections": [
+        { "title": "1. Que sont les cookies ?", "body": "Les cookies sont de petits fichiers texte stockés sur votre appareil lorsque vous visitez un site web. Ils aident les sites à fonctionner correctement, à mémoriser les préférences et à collecter des informations d'utilisation." },
+        { "title": "2. Utilisation des cookies", "body": "Ce site peut utiliser des cookies et des technologies similaires pour :", "list": ["Analyser le trafic du site et le comportement des visiteurs", "Améliorer les performances et l'utilisabilité du site", "Maintenir la sécurité et la fiabilité opérationnelle", "Mémoriser certaines préférences utilisateur le cas échéant"] },
+        { "title": "3. Google Analytics", "body": "Ce site utilise Google Analytics, un service d'analyse web fourni par Google, pour mieux comprendre comment les visiteurs interagissent avec le site. Google Analytics peut collecter des informations anonymisées, notamment :", "list": ["Pages visitées", "Temps passé sur les pages", "Informations sur l'appareil et le navigateur", "Localisation géographique approximative", "Sources de trafic et interactions"], "footer": "Ces informations sont utilisées uniquement pour améliorer la qualité, les performances et l'expérience utilisateur du site." },
+        { "title": "4. Gestion des cookies", "body": "La plupart des navigateurs web permettent de gérer ou de désactiver les cookies via leurs paramètres.", "footer": "La désactivation des cookies peut affecter certaines fonctionnalités ou certains aspects de l'expérience utilisateur sur le site." },
+        { "title": "5. Mises à jour de la politique", "body": "Cette Politique de Cookies peut être mise à jour périodiquement pour refléter les changements technologiques, les outils d'analyse ou les exigences légales." }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# VS Code workspace settings (per-folder .vscode/extensions.json is kept)
+.vscode/
+!.vscode/extensions.json
+
+# ─── Deployment secrets ───────────────────────────────────────────────────────
+# Real credentials / production env — NEVER commit these.
+deploy/backend.env.production
+
+# Temporary server diagnostic — delete from server after use, don't commit.
+deploy/api/diagnose.php
+
+# ─── Everything else is handled by sub-folder .gitignore files ───────────────
+# backend/.gitignore  →  vendor/, .env, storage keys, cache, logs …
+# frontend/.gitignore →  node_modules/, dist/, .env, .env.* …

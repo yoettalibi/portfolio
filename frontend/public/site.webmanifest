@@ -1,0 +1,17 @@
+{
+  "name": "ET-TALIBI",
+  "short_name": "ETTALIBI",
+  "description": "Engineering Digital Systems",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07090c",
+  "theme_color": "#07090c",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
