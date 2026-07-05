@@ -2,10 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /dashboard/
 Disallow: /login
-Disallow: /contact
-Disallow: /privacy
-Disallow: /terms
-Disallow: /cookies
 
 Host: https://ettalibi.com
 Sitemap: https://ettalibi.com/sitemap.xml

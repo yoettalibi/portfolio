@@ -53,7 +53,7 @@ Full-stack personal portfolio with a React SPA frontend and a Laravel REST API b
 |------|---------|---------|
 | PHP | 8.3 | Runtime |
 | Laravel | 13 | API framework |
-| Laravel Sanctum | 4 | Bearer-token auth |
+| Laravel Sanctum | 4 | SPA cookie-session auth |
 | Resend | — | Transactional email |
 | spatie/laravel-translatable | 6 | Translatable models |
 | MySQL | 8 | Database |
@@ -129,9 +129,9 @@ Browser
                                         (Laravel handles the request)
 ```
 
-- **Same origin** — frontend and API share `ettalibi.com`, so no CORS is needed.
+- **Same origin** — frontend and API share `ettalibi.com`.
 - The `deploy/api/index.php` bridge adjusts `SCRIPT_NAME` so Symfony's router resolves paths correctly before booting Laravel.
-- All authentication uses **Sanctum Bearer tokens** stored in `localStorage` (`_t`).
+- All authentication uses **Sanctum's SPA cookie-session mode** — an httpOnly session cookie, never exposed to JavaScript. `GET /api/csrf-cookie` (a stand-in for Sanctum's default `/sanctum/csrf-cookie`, which lives outside the `/api` bridge) issues the `XSRF-TOKEN` cookie required on mutating requests.
 
 ---
 
@@ -209,6 +209,7 @@ npm run dev
 | `DB_USERNAME` | `u410862470_ettalibi` | MySQL username |
 | `DB_PASSWORD` | `…` | MySQL password — **quote it** if it contains `#` |
 | `SESSION_DOMAIN` | `.ettalibi.com` | Leading dot covers all subdomains |
+| `SANCTUM_STATEFUL_DOMAINS` | `ettalibi.com` | Domains that receive the stateful session cookie |
 | `RESEND_API_KEY` | `re_…` | Get one at [resend.com](https://resend.com) |
 | `MAIL_FROM_ADDRESS` | `contact@ettalibi.com` | Sender address |
 | `ADMIN_EMAIL` | `contact@ettalibi.com` | Admin account email (seeder) |
@@ -230,7 +231,8 @@ npm run dev
 
 | Method | Path | Description |
 |--------|------|-------------|
-| `POST` | `/api/login` | Authenticate — returns Bearer token |
+| `GET` | `/api/csrf-cookie` | Issues the `XSRF-TOKEN` cookie — call before any mutating request |
+| `POST` | `/api/login` | Authenticate — starts an httpOnly session |
 | `POST` | `/api/forgot-password` | Send password reset email |
 | `POST` | `/api/reset-password` | Reset password with token |
 | `POST` | `/api/contact` | Contact form submission |
@@ -241,11 +243,11 @@ npm run dev
 
 All public routes are rate-limited (login: 5/min, contact: 3/5 min, subscribe: 5/min).
 
-### Protected endpoints (Bearer token required)
+### Protected endpoints (active session cookie required)
 
 | Method | Path | Description |
 |--------|------|-------------|
-| `POST` | `/api/logout` | Revoke current token |
+| `POST` | `/api/logout` | Destroy the current session |
 | `GET` | `/api/me` | Authenticated user profile |
 | `PATCH` | `/api/me` | Update profile |
 | `POST` | `/api/verify-password` | Confirm password before sensitive actions |
@@ -273,7 +275,7 @@ All public routes are rate-limited (login: 5/min, contact: 3/5 min, subscribe: 5
 | **Google Analytics** | GA4 loaded via `requestIdleCallback` — off the critical path |
 | **Self-hosted fonts** | Inter Variable served from own domain — no external DNS |
 | **SEO** | Sitemap, canonical URLs, Open Graph, Twitter Cards |
-| **Security** | Sanctum tokens, rate limiting, generic auth errors, BCRYPT 12 rounds |
+| **Security** | Sanctum SPA cookie-session auth (httpOnly), rate limiting, generic auth errors, BCRYPT 12 rounds |
 
 ---
 
@@ -309,8 +311,10 @@ All public routes are rate-limited (login: 5/min, contact: 3/5 min, subscribe: 5
 
 ```bash
 cd frontend
-npm run build
-# Output: frontend/dist/
+npm run build:seo
+# Output: frontend/dist/ — includes prerendered static HTML for every public
+# route (dist/about/index.html, dist/work/<slug>/index.html, etc.) so
+# crawlers get real content without executing JS.
 ```
 
 Upload **all contents of `frontend/dist/`** to `public_html/`.
@@ -355,6 +359,7 @@ DB_USERNAME=      # cPanel database user
 DB_PASSWORD=      # wrap in quotes if it contains special chars
 
 SESSION_DOMAIN=.yourdomain.com
+SANCTUM_STATEFUL_DOMAINS=yourdomain.com
 
 RESEND_API_KEY=   # resend.com → API Keys
 MAIL_FROM_ADDRESS=contact@yourdomain.com
@@ -431,5 +436,4 @@ php artisan view:cache
 - **Rate limiting** on all mutation endpoints (login, contact, subscribe).
 - **DB password quoting** — if the password contains `#`, it must be wrapped in double quotes in `.env` to prevent dotenv from truncating it as a comment.
 - **Backend outside web root** — `laravel_backend/` is never directly accessible via HTTP.
-- **No CORS needed** — frontend and API share the same origin.
-- Sanctum tokens are stored in `localStorage` with opaque key names (`_t`, `_u`, `_lt`).
+- **Session-cookie auth** — Sanctum SPA mode issues an httpOnly, same-origin session cookie. There is no bearer token in `localStorage`, so an XSS bug can no longer exfiltrate a reusable credential directly. CSRF is mitigated by the `XSRF-TOKEN` double-submit cookie Laravel verifies on every mutating request.

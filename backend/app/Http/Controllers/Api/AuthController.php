@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
@@ -32,16 +33,20 @@ class AuthController extends Controller
             return $invalid();
         }
 
-        // Revoke all previous tokens then issue a fresh one
-        $user->tokens()->delete();
-        $token = $user->createToken('admin-token')->plainTextToken;
+        // Log in via the session guard — Sanctum's stateful middleware turns
+        // this into an httpOnly session cookie for the SPA. No bearer token
+        // is issued or stored client-side.
+        Auth::guard('web')->login($user);
+        $request->session()->regenerate();
 
-        return response()->json(['token' => $token], 200);
+        return response()->json(['message' => 'Logged in.'], 200);
     }
 
     public function logout(Request $request): JsonResponse
     {
-        $request->user()->currentAccessToken()->delete();
+        Auth::guard('web')->logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
 
         return response()->json(['message' => 'Logged out.'], 200);
     }

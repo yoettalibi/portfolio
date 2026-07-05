@@ -21,6 +21,17 @@ Route::middleware('throttle:3,5')->post('/contact', [ContactController::class, '
 // Public settings (GA4 ID + coming soon config)
 Route::get('/settings', [SettingsController::class, 'index']);
 
+// Issues the XSRF-TOKEN cookie needed for stateful (session-cookie) SPA auth.
+// Sanctum's built-in /sanctum/csrf-cookie route lives outside the "api"
+// prefix and is unreachable through this app's deploy bridge, which only
+// forwards public_html/api/* to Laravel — so we expose an equivalent route
+// here instead. EnsureFrontendRequestsAreStateful (enabled globally via
+// Middleware::statefulApi() in bootstrap/app.php) starts the session and
+// attaches the XSRF-TOKEN cookie to the response.
+Route::get('/csrf-cookie', function () {
+    return response()->noContent();
+});
+
 // Newsletter subscription — rate limited to 5 req/min per IP
 Route::middleware('throttle:5,1')->post('/subscribe', [NewsletterController::class, 'store']);
 

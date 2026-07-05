@@ -21,6 +21,9 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         // Security headers on every response
         $middleware->append(SecurityHeaders::class);
+        // Authenticate first-party SPA requests via Sanctum's stateful (cookie)
+        // session guard instead of bearer tokens — see config/sanctum.php.
+        $middleware->statefulApi();
         // Set app locale from Accept-Language header on all API routes
         $middleware->appendToGroup('api', SetLocale::class);
     })

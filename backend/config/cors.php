@@ -29,6 +29,8 @@ return [
 
     'max_age' => 600,
 
-    'supports_credentials' => false,
+    // Required for Sanctum's SPA cookie authentication — the browser must be
+    // allowed to send/receive the session cookie on cross-origin XHR/fetch.
+    'supports_credentials' => true,
 
 ];
