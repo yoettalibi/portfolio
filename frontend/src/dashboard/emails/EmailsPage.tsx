@@ -200,7 +200,7 @@ export default function EmailsPage() {
           </div>
           <div className="flex flex-col gap-2">
             <p className="text-[15px] font-semibold text-white/50">{t('dashboard.emails.emptyTitle')}</p>
-            <p className="text-sm text-slate-600 max-w-[280px] leading-[1.8]">{t('dashboard.emails.emptySubtitle')}</p>
+            <p className="text-sm text-slate-600 max-w-70 leading-[1.8]">{t('dashboard.emails.emptySubtitle')}</p>
           </div>
         </div>
       )}
@@ -233,7 +233,7 @@ export default function EmailsPage() {
           </div>
 
           {/* Scrollable rows */}
-          <div className="overflow-y-auto max-h-[560px]">
+          <div className="overflow-y-auto max-h-140">
             {paginated.map((email, i) => {
               const event   = email.last_event ?? 'sent'
               const sender  = parseAddress(email.reply_to)

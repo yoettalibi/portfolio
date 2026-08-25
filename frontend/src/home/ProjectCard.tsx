@@ -6,7 +6,7 @@ export default function ProjectCard({ index, category, title, description, tags,
     <article className="relative rounded-3xl border border-white/7 bg-white/2 overflow-hidden transition-all duration-300 hover:border-accent/22">
       <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr]">
 
-        <div className="h-[200px] lg:h-auto relative overflow-hidden bg-panel-card">
+        <div className="h-50 lg:h-auto relative overflow-hidden bg-panel-card">
           <div className="absolute inset-0 bg-grid-subtle" />
           {illustration ? (
             <div className="absolute inset-0 flex items-center justify-center p-6">
@@ -24,7 +24,7 @@ export default function ProjectCard({ index, category, title, description, tags,
             <div className="flex items-center justify-between mb-5">
               <span className="text-accent text-xs uppercase tracking-[0.2em]">{category}</span>
             </div>
-            <h3 className="text-2xl lg:text-[26px] font-bold leading-[1.25] mb-4">{title}</h3>
+            <h3 className="text-2xl lg:text-[26px] font-bold leading-tight mb-4">{title}</h3>
             <p className="text-slate-400 text-sm lg:text-base leading-[1.8] mb-6">{description}</p>
           </div>
           <div className="flex flex-col gap-5">

@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="border-t border-white/5 pt-16 pb-14">
       <div className="page-container flex flex-col gap-10">
 
-        <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,black_8%,black_92%,transparent_100%)]">
+        <div className="overflow-hidden mask-[linear-gradient(to_right,transparent_0%,black_8%,black_92%,transparent_100%)]">
           <div className="flex items-baseline w-max animate-[marquee_40s_linear_infinite] hover:[animation-play-state:paused]">
             {[0, 1].map(r => (
               <Fragment key={r}>

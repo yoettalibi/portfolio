@@ -41,7 +41,7 @@ export default function PrinciplesWorkSection() {
               <p className="uppercase tracking-[0.2em] text-xs text-slate-400 mb-3">
                 {t('principles.workLabel')}
               </p>
-              <h2 className="text-[clamp(28px,4vw,58px)] leading-[1.05] font-bold max-w-[680px]">
+              <h2 className="text-[clamp(28px,4vw,58px)] leading-[1.05] font-bold max-w-170">
                 {t('principles.workHeading')}
               </h2>
             </div>

@@ -21,6 +21,9 @@ Route::middleware('throttle:3,5')->post('/contact', [ContactController::class, '
 // Public settings (GA4 ID + coming soon config)
 Route::get('/settings', [SettingsController::class, 'index']);
 
+// Session check — returns user data or null (no 401, avoids console noise)
+Route::get('/me', [AuthController::class, 'me']);
+
 // Issues the XSRF-TOKEN cookie needed for stateful (session-cookie) SPA auth.
 // Sanctum's built-in /sanctum/csrf-cookie route lives outside the "api"
 // prefix and is unreachable through this app's deploy bridge, which only
@@ -42,7 +45,6 @@ Route::get('/unsubscribe', [SubscriptionController::class, 'unsubscribe']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::post('/verify-password', [AuthController::class, 'verifyPassword']);
-    Route::get('/me', [AuthController::class, 'me']);
     Route::patch('/me', [AuthController::class, 'updateProfile']);
     Route::patch('/settings', [SettingsController::class, 'update']);
     Route::get('/emails', [EmailsController::class, 'index']);

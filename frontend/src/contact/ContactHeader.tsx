@@ -4,7 +4,7 @@ export default function ContactHeader() {
   const { t } = useTranslation()
 
   return (
-    <div className="max-w-[680px] mb-14">
+    <div className="max-w-170 mb-14">
       <p className="uppercase tracking-[0.2em] text-xs text-slate-400 mb-3">{t('contact.label')}</p>
       <h1 className="text-[clamp(26px,3.5vw,48px)] leading-[1.1] font-extrabold mb-4">
         {t('contact.heading')}{' '}

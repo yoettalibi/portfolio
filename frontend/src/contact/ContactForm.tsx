@@ -77,9 +77,9 @@ export default function ContactForm({ onSent }: { onSent?: (firstName: string, s
       >
         {/* Divider */}
         <div className="flex items-center gap-4 mb-6">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/8 to-transparent" />
+          <div className="h-px flex-1 bg-linear-to-r from-transparent via-white/8 to-transparent" />
           <span className="text-[11px] uppercase tracking-[0.2em] text-slate-400 shrink-0">{t('contact.form.detailsLabel')}</span>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/8 to-transparent" />
+          <div className="h-px flex-1 bg-linear-to-r from-transparent via-white/8 to-transparent" />
         </div>
 
         {/* Frosted card */}
@@ -123,9 +123,9 @@ export default function ContactForm({ onSent }: { onSent?: (firstName: string, s
                 className={
                   inputCls +
                   (emailError
-                    ? ' !border-red-400/60 focus:!border-red-400/60 bg-red-500/5'
+                    ? ' border-red-400/60! focus:border-red-400/60! bg-red-500/5'
                     : form.email && !emailError
-                    ? ' !border-emerald-400/40 focus:!border-emerald-400/50'
+                    ? ' border-emerald-400/40! focus:border-emerald-400/50!'
                     : '')
                 }
                 aria-invalid={!!emailError}
@@ -193,7 +193,7 @@ export default function ContactForm({ onSent }: { onSent?: (firstName: string, s
               <button
                 type="submit"
                 disabled={sending}
-                className={`group flex items-center gap-2.5 rounded-2xl px-6 py-3.5 text-sm font-semibold text-white border border-accent/22 bg-gradient-to-br from-accent/18 to-white/5 hover:border-accent/40 transition-all duration-300 origin-right ${
+                className={`group flex items-center gap-2.5 rounded-2xl px-6 py-3.5 text-sm font-semibold text-white border border-accent/22 bg-linear-to-br from-accent/18 to-white/5 hover:border-accent/40 transition-all duration-300 origin-right ${
                   isFormReady && termsAccepted ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'
                 }`}
               >

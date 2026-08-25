@@ -133,14 +133,14 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-10 lg:gap-20 items-start mb-20 lg:mb-28">
 
         {/* IMAGE */}
-        <div className="relative h-[360px] lg:h-[500px] rounded-4xl overflow-hidden border border-white/8 bg-about-hero">
+        <div className="relative h-90 lg:h-125 rounded-4xl overflow-hidden border border-white/8 bg-about-hero">
           <div className="absolute inset-0 bg-grid-subtle" />
           <img
             src="/image.png"
             alt={t('aboutPage.portrait')}
             className="absolute inset-0 w-full h-full object-cover object-top"
           />
-          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-canvas/70 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-canvas/70 to-transparent" />
         </div>
 
         {/* BIO */}
@@ -148,17 +148,17 @@ export default function AboutPage() {
           <span className="text-accent text-xs uppercase tracking-[0.2em] mb-3 block">
             {t('aboutPage.accentLabel')}
           </span>
-          <h1 className="text-[clamp(36px,5.5vw,76px)] font-bold leading-[1.0] mb-3 text-white">
+          <h1 className="text-[clamp(36px,5.5vw,76px)] font-bold leading-none mb-3 text-white">
             {t('aboutPage.name')}
           </h1>
           <p className="text-slate-500 text-sm mb-8 tracking-[0.18em] uppercase">
             {t('aboutPage.tagline')}
           </p>
           <div className="w-12 h-px bg-accent/40 mb-8" />
-          <p className="text-slate-400 leading-[1.85] text-sm lg:text-base mb-5 max-w-[560px]">
+          <p className="text-slate-400 leading-[1.85] text-sm lg:text-base mb-5 max-w-140">
             {t('aboutPage.bio1')}
           </p>
-          <p className="text-slate-400 leading-[1.85] text-sm lg:text-base max-w-[560px]">
+          <p className="text-slate-400 leading-[1.85] text-sm lg:text-base max-w-140">
             {t('aboutPage.bio2')}
           </p>
           <div className="flex flex-wrap gap-2 mt-8">
@@ -191,7 +191,7 @@ export default function AboutPage() {
         <p className="uppercase tracking-[0.2em] text-xs text-slate-400 mb-3">
           {t('aboutPage.expertiseLabel')}
         </p>
-        <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold leading-[1.1] mb-12 max-w-[580px] text-white">
+        <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold leading-[1.1] mb-12 max-w-145 text-white">
           {t('aboutPage.expertiseHeading')}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -215,7 +215,7 @@ export default function AboutPage() {
         <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold leading-[1.1] mb-10 text-white">
           {t('aboutPage.capabilitiesHeading')}
         </h2>
-        <div className="flex flex-col gap-3 overflow-hidden [mask-image:linear-gradient(to_right,transparent,5%,black_15%,black_85%,transparent_95%,transparent)]">
+        <div className="flex flex-col gap-3 overflow-hidden mask-[linear-gradient(to_right,transparent,5%,black_15%,black_85%,transparent_95%,transparent)]">
           {[
             [...capabilityTags.slice(0, 8), ...capabilityTags.slice(0, 8)],
             [...capabilityTags.slice(7), ...capabilityTags.slice(7)],
@@ -243,7 +243,7 @@ export default function AboutPage() {
         <p className="uppercase tracking-[0.2em] text-xs text-slate-400 mb-3">
           {t('aboutPage.philosophyLabel')}
         </p>
-        <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold leading-[1.1] mb-12 max-w-[540px] text-white">
+        <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold leading-[1.1] mb-12 max-w-135 text-white">
           {t('aboutPage.philosophyHeading')}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -264,7 +264,7 @@ export default function AboutPage() {
         <p className="uppercase tracking-[0.2em] text-xs text-slate-400 mb-3">
           {t('aboutPage.opLabel')}
         </p>
-        <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold leading-[1.1] mb-8 max-w-[720px] text-white">
+        <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold leading-[1.1] mb-8 max-w-180 text-white">
           {t('aboutPage.opHeading')}
         </h2>
         <div>

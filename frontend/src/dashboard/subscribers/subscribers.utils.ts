@@ -8,7 +8,7 @@ export interface Subscription {
 }
 
 const PALETTE = [
-  'bg-[#7ea8ff]/15 text-[#7ea8ff]',
+  'bg-accent/15 text-accent',
   'bg-emerald-400/15 text-emerald-400',
   'bg-violet-400/15 text-violet-400',
   'bg-amber-400/15 text-amber-400',

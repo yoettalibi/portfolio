@@ -91,7 +91,7 @@ export default function DashboardHeader() {
             </svg>
           </button>
           {langOpen && (
-            <div className="absolute right-0 mt-2 min-w-[5rem] rounded-xl border border-white/10 bg-bg/95 backdrop-blur-md shadow-xl overflow-hidden z-50">
+            <div className="absolute right-0 mt-2 min-w-20 rounded-xl border border-white/10 bg-bg/95 backdrop-blur-md shadow-xl overflow-hidden z-50">
               {langs.map((lang) => (
                 <button
                   key={lang.code}

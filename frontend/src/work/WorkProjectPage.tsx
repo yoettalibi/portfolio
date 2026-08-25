@@ -79,10 +79,10 @@ export default function WorkProjectPage() {
         <span className="text-accent text-xs uppercase tracking-[0.2em] mb-4 block">
           {category}
         </span>
-        <h1 className="text-[clamp(28px,4vw,56px)] font-bold leading-[1.1] mb-6 max-w-[720px]">
+        <h1 className="text-[clamp(28px,4vw,56px)] font-bold leading-[1.1] mb-6 max-w-180">
           {title}
         </h1>
-        <p className="text-slate-400 text-base lg:text-lg leading-[1.8] max-w-[620px] mb-8">
+        <p className="text-slate-400 text-base lg:text-lg leading-[1.8] max-w-155 mb-8">
           {description}
         </p>
         <div className="flex flex-wrap gap-2">
@@ -101,11 +101,11 @@ export default function WorkProjectPage() {
         </p>
 
         <div className="relative">
-          <div className="absolute left-[23px] top-6 bottom-6 w-px bg-gradient-to-b from-accent/20 via-white/6 to-transparent hidden sm:block" />
+          <div className="absolute left-5.75 top-6 bottom-6 w-px bg-linear-to-b from-accent/20 via-white/6 to-transparent hidden sm:block" />
           <div className="flex flex-col">
             {steps.map((step, i) => (
               <div key={i} className="relative flex gap-6 sm:gap-10">
-                <div className="relative z-10 flex-shrink-0 w-12 h-12 rounded-full border border-white/10 bg-canvas flex items-center justify-center mt-0.5">
+                <div className="relative z-10 shrink-0 w-12 h-12 rounded-full border border-white/10 bg-canvas flex items-center justify-center mt-0.5">
                   <span className="text-xs font-bold text-accent">{String(i + 1).padStart(2, '0')}</span>
                 </div>
                 <div className={`flex flex-col ${i < steps.length - 1 ? 'pb-10' : 'pb-0'} flex-1`}>
@@ -126,7 +126,7 @@ export default function WorkProjectPage() {
           <div className="w-2 h-2 rounded-full bg-accent" />
           <p className="uppercase tracking-[0.2em] text-xs text-accent">{t('workProject.outcomeLabel')}</p>
         </div>
-        <p className="text-base lg:text-lg text-white/80 leading-[1.85] max-w-[680px]">
+        <p className="text-base lg:text-lg text-white/80 leading-[1.85] max-w-170">
           {outcome}
         </p>
       </div>

@@ -4,6 +4,12 @@
     # Let the api/ directory handle its own requests — do not touch them here.
     RewriteRule ^api(/.*)?$ - [L]
 
+    # Return 404 for missing static assets (JS/CSS/fonts) instead of serving
+    # index.html — prevents MIME type errors when browser has cached old chunk
+    # filenames that no longer exist after a new deploy.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule \.(js|css|woff2?|ttf|eot|map)$ - [R=404,L]
+
     # React SPA fallback: every non-file, non-directory request gets index.html
     # so that client-side routing (react-router-dom) handles the URL.
     RewriteCond %{REQUEST_FILENAME} !-f

@@ -61,7 +61,7 @@ export default function ComingSoonSettingsPage() {
     <div>
       {/* Header */}
       <div className="mb-10">
-        <p className="text-xs font-semibold tracking-[0.15em] uppercase text-[#7ea8ff] mb-2">
+        <p className="text-xs font-semibold tracking-[0.15em] uppercase text-accent mb-2">
           {t('dashboard.comingSoon.eyebrow')}
         </p>
         <h1 className="text-3xl font-bold text-white/90">
@@ -72,7 +72,7 @@ export default function ComingSoonSettingsPage() {
       </div>
 
       {/* Toggle */}
-      <div className="rounded-2xl border border-white/8 bg-white/[0.02] p-5 mb-5">
+      <div className="rounded-2xl border border-white/8 bg-white/2 p-5 mb-5">
         <div className="flex items-center justify-between gap-4">
           <div>
             <p className="text-sm font-medium text-white/90">
@@ -90,7 +90,7 @@ export default function ComingSoonSettingsPage() {
             onClick={() => setEnabled((v) => !v)}
             className={[
               'relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors duration-200 cursor-pointer',
-              enabled ? 'bg-[#7ea8ff]' : 'bg-white/10',
+              enabled ? 'bg-accent' : 'bg-white/10',
             ].join(' ')}
           >
             <span
@@ -107,7 +107,7 @@ export default function ComingSoonSettingsPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-6">
 
         {/* Content */}
-        <div className="rounded-2xl border border-white/8 bg-white/[0.02] p-5 flex flex-col gap-5">
+        <div className="rounded-2xl border border-white/8 bg-white/2 p-5 flex flex-col gap-5">
           <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
             {t('dashboard.comingSoon.sectionContent')}
           </p>
@@ -133,7 +133,7 @@ export default function ComingSoonSettingsPage() {
         </div>
 
         {/* Socials */}
-        <div className="rounded-2xl border border-white/8 bg-white/[0.02] p-5 flex flex-col gap-5">
+        <div className="rounded-2xl border border-white/8 bg-white/2 p-5 flex flex-col gap-5">
           <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
             {t('dashboard.comingSoon.sectionSocials')}
           </p>
@@ -164,7 +164,7 @@ export default function ComingSoonSettingsPage() {
         <button
           onClick={handleSave}
           disabled={saving}
-          className="rounded-xl bg-[#7ea8ff] text-[#07090c] text-sm font-semibold px-6 py-2.5 hover:brightness-110 transition-all disabled:opacity-60 cursor-pointer"
+          className="rounded-xl bg-accent text-[#07090c] text-sm font-semibold px-6 py-2.5 hover:brightness-110 transition-all disabled:opacity-60 cursor-pointer"
         >
           {saving ? t('dashboard.comingSoon.saving') : t('dashboard.comingSoon.save')}
         </button>

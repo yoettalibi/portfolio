@@ -13,8 +13,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   // to know if a session is already active (e.g. after a page refresh) is to
   // ask the API.
   useEffect(() => {
-    api.get<AuthUser>('/me')
-      .then(({ data }) => setUser(data))
+    api.get<AuthUser | { user: null }>('/me')
+      .then(({ data }) => setUser('user' in data ? null : data))
       .catch(() => setUser(null))
       .finally(() => setInitializing(false))
   }, [])

@@ -1,7 +1,7 @@
 export default function ContactSidebar() {
   return (
     <aside className="hidden lg:flex items-center justify-center">
-      <svg viewBox="0 0 420 520" fill="none" className="w-full max-w-[380px]" aria-hidden="true">        {/* Ambient glow */}
+      <svg viewBox="0 0 420 520" fill="none" className="w-full max-w-95" aria-hidden="true">        {/* Ambient glow */}
         <ellipse cx="210" cy="260" rx="160" ry="200" fill="rgba(126,168,255,0.04)"/>
 
         {/* Central card */}

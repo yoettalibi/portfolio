@@ -56,13 +56,13 @@ export default function Navbar() {
   return (
     <nav
       aria-label={t('nav.ariaMain')}
-      className={`sticky top-0 z-[100] transition-all duration-300 border-b backdrop-blur-md ${
+      className={`sticky top-0 z-100 transition-all duration-300 border-b backdrop-blur-md ${
         scrolled
           ? 'border-white/7 bg-canvas/88 shadow-nav'
           : 'border-white/4 bg-canvas/72'
       }`}
     >
-      <div className="page-container h-16 md:h-[84px] flex items-center justify-between">
+      <div className="page-container h-16 md:h-21 flex items-center justify-between">
         <Logo />
 
         {/* Desktop links */}
@@ -113,7 +113,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => navigate('/contact')}
-            className="hidden sm:inline-flex items-center gap-2 py-2.5 px-5 md:py-3 md:px-6 rounded-full border border-accent/22 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-accent-glow bg-gradient-to-br from-accent/12 to-white/4 cursor-pointer"
+            className="hidden sm:inline-flex items-center gap-2 py-2.5 px-5 md:py-3 md:px-6 rounded-full border border-accent/22 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-accent-glow bg-linear-to-br from-accent/12 to-white/4 cursor-pointer"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-accent/70 animate-pulse" />
             {t('nav.cta')}
@@ -174,15 +174,15 @@ export default function Navbar() {
             onClick={() => setMobileOpen((v) => !v)}
             className="md:hidden w-9 h-9 flex flex-col items-center justify-center gap-1.5 rounded-full border border-white/8 bg-white/3 cursor-pointer"
           >
-            <span className={`w-4 h-px bg-white/70 transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[5px]' : ''}`} />
+            <span className={`w-4 h-px bg-white/70 transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-1.25' : ''}`} />
             <span className={`w-4 h-px bg-white/70 transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
-            <span className={`w-4 h-px bg-white/70 transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[5px]' : ''}`} />
+            <span className={`w-4 h-px bg-white/70 transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-1.25' : ''}`} />
           </button>
         </div>
       </div>
 
       {/* Mobile drawer */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${mobileOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${mobileOpen ? 'max-h-125 opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="page-container pb-5 pt-3 flex flex-col gap-3">
 
           {/* Links — same pill style as desktop */}
@@ -213,7 +213,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => navigate('/contact')}
-            className="flex items-center justify-center gap-2 py-3 px-5 rounded-full border border-accent/22 text-sm font-medium bg-gradient-to-br from-accent/12 to-white/4 cursor-pointer text-white transition-all duration-300 hover:border-accent/40"
+            className="flex items-center justify-center gap-2 py-3 px-5 rounded-full border border-accent/22 text-sm font-medium bg-linear-to-br from-accent/12 to-white/4 cursor-pointer text-white transition-all duration-300 hover:border-accent/40"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-accent/70 animate-pulse" />
             {t('nav.cta')}

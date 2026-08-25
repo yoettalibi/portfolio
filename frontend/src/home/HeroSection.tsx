@@ -16,12 +16,12 @@ export default function HeroSection() {
             {t('hero.badge')}
           </div>
 
-          <h1 className="text-[clamp(30px,5.2vw,68px)] leading-[1.05] font-extrabold mb-5 lg:mb-6 max-w-[760px]">
+          <h1 className="text-[clamp(30px,5.2vw,68px)] leading-[1.05] font-extrabold mb-5 lg:mb-6 max-w-190">
             {t('hero.heading')}{' '}
             <span className="text-white/55">{t('hero.headingFade')}</span>
           </h1>
 
-          <p className="max-w-[640px] text-slate-400 text-base md:text-lg leading-[1.8] mb-8 lg:mb-10">
+          <p className="max-w-160 text-slate-400 text-base md:text-lg leading-[1.8] mb-8 lg:mb-10">
             {t('hero.body')}
           </p>
 
@@ -32,7 +32,7 @@ export default function HeroSection() {
             <button
               type="button"
               onClick={() => scrollToSection('systems')}
-              className="sm:w-auto w-full py-4.5 px-7 rounded-2xl text-base text-white transition-all duration-300 border border-white/8 bg-white/3 hover:-translate-y-1 cursor-pointer bg-transparent"
+              className="sm:w-auto w-full py-4.5 px-7 rounded-2xl text-base text-white transition-all duration-300 border border-white/8 hover:-translate-y-1 cursor-pointer bg-transparent"
             >
               {t('hero.cta2')}
             </button>

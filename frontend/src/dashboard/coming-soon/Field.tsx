@@ -1,7 +1,7 @@
 import { useId } from 'react'
 
 const cls =
-  'w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white placeholder:text-slate-600 outline-none focus:border-[#7ea8ff]/50 transition-colors resize-none [color-scheme:dark]'
+  'w-full rounded-xl border border-white/10 bg-white/4 px-4 py-2.5 text-sm text-white placeholder:text-slate-600 outline-none focus:border-accent/50 transition-colors resize-none [color-scheme:dark]'
 
 interface FieldProps {
   label: string

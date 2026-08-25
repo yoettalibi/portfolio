@@ -126,9 +126,9 @@ export default function ComingSoonPage({ settings }: { settings: Settings }) {
 
       <div className="relative z-10 text-center px-6 max-w-2xl w-full mx-auto py-20">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 border border-[#7ea8ff]/20 bg-[#7ea8ff]/5 rounded-full px-4 py-1.5 mb-10">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#7ea8ff] animate-pulse" />
-          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#7ea8ff]">
+        <div className="inline-flex items-center gap-2 border border-accent/20 bg-accent/5 rounded-full px-4 py-1.5 mb-10">
+          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+          <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent">
             {t('comingSoon.badge')}
           </span>
         </div>
@@ -149,7 +149,7 @@ export default function ComingSoonPage({ settings }: { settings: Settings }) {
             {countdownItems.map(({ v, l }) => (
               <div
                 key={l}
-                className="flex flex-col items-center gap-2 rounded-2xl border border-white/8 bg-white/[0.03] px-2 py-5"
+                className="flex flex-col items-center gap-2 rounded-2xl border border-white/8 bg-white/3 px-2 py-5"
               >
                 <span className="text-3xl sm:text-4xl font-black text-white tabular-nums leading-none">
                   {String(v).padStart(2, '0')}
@@ -190,12 +190,12 @@ export default function ComingSoonPage({ settings }: { settings: Settings }) {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('comingSoon.subscribe.placeholder')}
-                className="flex-1 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none focus:border-[#7ea8ff]/50 transition-colors"
+                className="flex-1 rounded-xl border border-white/10 bg-white/4 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none focus:border-accent/50 transition-colors"
               />
               <button
                 type="submit"
                 disabled={!emailValid || subStatus === 'sending'}
-                className="shrink-0 rounded-xl bg-[#7ea8ff] text-[#07090c] text-sm font-semibold px-6 py-3 hover:brightness-110 transition-all disabled:opacity-60 cursor-pointer"
+                className="shrink-0 rounded-xl bg-accent text-[#07090c] text-sm font-semibold px-6 py-3 hover:brightness-110 transition-all disabled:opacity-60 cursor-pointer"
               >
                 {subStatus === 'sending'
                   ? t('comingSoon.subscribe.sending')

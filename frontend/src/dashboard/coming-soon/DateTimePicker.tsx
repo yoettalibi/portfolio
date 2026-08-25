@@ -78,11 +78,11 @@ export function DateTimePicker({ value, onChange, label }: DateTimePickerProps) 
         onClick={() => setOpen(v => !v)}
         className={[
           'w-full text-left rounded-xl border px-4 py-2.5 text-sm outline-none transition-all flex items-center justify-between gap-2 group',
-          open ? 'border-[#7ea8ff]/50 bg-[#7ea8ff]/5' : 'border-white/10 bg-white/[0.04] hover:border-white/20',
+          open ? 'border-accent/50 bg-accent/5' : 'border-white/10 bg-white/4 hover:border-white/20',
         ].join(' ')}
       >
         <div className="flex items-center gap-2.5">
-          <svg viewBox="0 0 20 20" fill="none" className={['w-4 h-4 shrink-0 transition-colors', open ? 'text-[#7ea8ff]' : 'text-slate-600 group-hover:text-slate-400'].join(' ')}>
+          <svg viewBox="0 0 20 20" fill="none" className={['w-4 h-4 shrink-0 transition-colors', open ? 'text-accent' : 'text-slate-600 group-hover:text-slate-400'].join(' ')}>
             <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" strokeWidth="1.3"/>
             <path d="M3 8h14" stroke="currentColor" strokeWidth="1.3"/>
             <path d="M7 2v3M13 2v3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
@@ -151,8 +151,8 @@ export function DateTimePicker({ value, onChange, label }: DateTimePickerProps) 
                     disabled={isPast}
                     className={['aspect-square rounded-lg text-xs font-medium transition-all flex items-center justify-center',
                       isPast ? 'text-slate-700 cursor-not-allowed'
-                      : isSel ? 'bg-[#7ea8ff] text-[#07090c] font-bold shadow-lg shadow-[#7ea8ff]/20'
-                      : isTod ? 'ring-1 ring-inset ring-[#7ea8ff]/30 text-[#7ea8ff] hover:bg-[#7ea8ff]/10'
+                      : isSel ? 'bg-accent text-[#07090c] font-bold shadow-lg shadow-accent/20'
+                      : isTod ? 'ring-1 ring-inset ring-accent/30 text-accent hover:bg-accent/10'
                       : 'text-slate-300 hover:bg-white/8 hover:text-white'].join(' ')}
                   >{day}</button>
                 )
@@ -166,15 +166,15 @@ export function DateTimePicker({ value, onChange, label }: DateTimePickerProps) 
             <div className="flex items-center justify-center gap-3">
               <div className="flex flex-col items-center gap-0.5">
                 {spinBtn('up', () => applyTime((hour + 1) % 24, minute))}
-                <div className="w-11 h-9 flex items-center justify-center rounded-xl bg-white/[0.04] border border-white/8 text-white font-bold tabular-nums">
+                <div className="w-11 h-9 flex items-center justify-center rounded-xl bg-white/4 border border-white/8 text-white font-bold tabular-nums">
                   {pad(hour)}
                 </div>
                 {spinBtn('dn', () => applyTime((hour + 23) % 24, minute))}
               </div>
-              <span className="text-[#7ea8ff]/50 font-bold text-xl mb-0.5">:</span>
+              <span className="text-accent/50 font-bold text-xl mb-0.5">:</span>
               <div className="flex flex-col items-center gap-0.5">
                 {spinBtn('up', () => applyTime(hour, (minute + 5) % 60))}
-                <div className="w-11 h-9 flex items-center justify-center rounded-xl bg-white/[0.04] border border-white/8 text-white font-bold tabular-nums">
+                <div className="w-11 h-9 flex items-center justify-center rounded-xl bg-white/4 border border-white/8 text-white font-bold tabular-nums">
                   {pad(minute)}
                 </div>
                 {spinBtn('dn', () => applyTime(hour, (minute + 55) % 60))}
@@ -183,7 +183,7 @@ export function DateTimePicker({ value, onChange, label }: DateTimePickerProps) 
 
             {/* Done */}
             <button type="button" onClick={() => setOpen(false)}
-              className="w-full mt-3 rounded-xl bg-[#7ea8ff]/10 border border-[#7ea8ff]/20 text-[#7ea8ff] text-xs font-semibold py-2 hover:bg-[#7ea8ff]/20 transition-all">
+              className="w-full mt-3 rounded-xl bg-accent/10 border border-accent/20 text-accent text-xs font-semibold py-2 hover:bg-accent/20 transition-all">
               Done
             </button>
           </div>

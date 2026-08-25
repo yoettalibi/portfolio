@@ -45,7 +45,7 @@ export default function SubscribersPage() {
       {/* Header */}
       <div className="flex items-start justify-between gap-4 mb-10">
         <div>
-          <p className="text-xs font-semibold tracking-[0.15em] uppercase text-[#7ea8ff] mb-2">
+          <p className="text-xs font-semibold tracking-[0.15em] uppercase text-accent mb-2">
             {t('dashboard.subscribers.eyebrow')}
           </p>
           <h1 className="text-3xl font-bold text-white/90">
@@ -87,7 +87,7 @@ export default function SubscribersPage() {
           <div className="rounded-2xl border border-white/8 divide-y divide-white/4 overflow-hidden">
             {pageSubs.map((sub) => (
               <div key={sub.id}
-                className="flex items-center gap-4 px-5 py-3.5 hover:bg-white/[0.02] transition-colors group">
+                className="flex items-center gap-4 px-5 py-3.5 hover:bg-white/2 transition-colors group">
 
                 {/* Avatar */}
                 <div className={['w-9 h-9 rounded-xl flex items-center justify-center text-sm font-bold shrink-0', avatarCls(sub.email)].join(' ')}>
@@ -114,7 +114,7 @@ export default function SubscribersPage() {
                     type="button"
                     onClick={() => setComposing(sub)}
                     title={t('dashboard.subscribers.sendEmail')}
-                    className="flex items-center gap-1.5 rounded-lg border border-white/8 bg-white/[0.02] px-2.5 py-1.5 text-xs font-medium text-slate-400 hover:text-[#7ea8ff] hover:border-[#7ea8ff]/30 hover:bg-[#7ea8ff]/5 transition-all cursor-pointer"
+                    className="flex items-center gap-1.5 rounded-lg border border-white/8 bg-white/2 px-2.5 py-1.5 text-xs font-medium text-slate-400 hover:text-accent hover:border-accent/30 hover:bg-accent/5 transition-all cursor-pointer"
                   >
                     <svg viewBox="0 0 20 20" fill="none" className="w-3.5 h-3.5 shrink-0">
                       <path d="M17.5 2.5l-9 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -170,7 +170,7 @@ export default function SubscribersPage() {
                   ) : (
                     <button key={p} onClick={() => setPage(p as number)}
                       className={['w-8 h-8 flex items-center justify-center rounded-lg text-xs font-medium transition-all cursor-pointer',
-                        p === page ? 'bg-[#7ea8ff] text-[#07090c] font-bold' : 'text-slate-400 hover:text-white hover:bg-white/8'].join(' ')}>
+                        p === page ? 'bg-accent text-[#07090c] font-bold' : 'text-slate-400 hover:text-white hover:bg-white/8'].join(' ')}>
                       {p}
                     </button>
                   )

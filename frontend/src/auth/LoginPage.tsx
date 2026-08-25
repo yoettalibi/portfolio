@@ -86,7 +86,7 @@ export default function LoginPage() {
       {/* Soft accent glow */}
       <div
         aria-hidden
-        className="absolute w-[480px] h-[480px] rounded-full pointer-events-none"
+        className="absolute w-120 h-120 rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(126,168,255,0.07) 0%, transparent 70%)' }}
       />
 
@@ -170,7 +170,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full h-10 px-4 rounded-xl text-sm font-medium text-white transition-all duration-200 border border-accent/25 bg-gradient-to-br from-accent/20 to-white/4 shadow-accent-glow hover:from-accent/30 hover:shadow-accent-glow-lg disabled:opacity-40 disabled:cursor-not-allowed"
+            className="w-full h-10 px-4 rounded-xl text-sm font-medium text-white transition-all duration-200 border border-accent/25 bg-linear-to-br from-accent/20 to-white/4 shadow-accent-glow hover:from-accent/30 hover:shadow-accent-glow-lg disabled:opacity-40 disabled:cursor-not-allowed"
           >
             {loading ? t('login.submitting') : t('login.submit')}
           </button>

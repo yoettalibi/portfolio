@@ -10,7 +10,7 @@ export default function CTASection() {
         <h2 className="text-[clamp(28px,5vw,68px)] leading-[1.05] mb-5 lg:mb-6 font-bold">
           {t('cta.heading')}
         </h2>
-        <p className="text-slate-400 max-w-[720px] mx-auto leading-[1.8] text-sm md:text-base lg:text-lg mb-8 lg:mb-10">
+        <p className="text-slate-400 max-w-180 mx-auto leading-[1.8] text-sm md:text-base lg:text-lg mb-8 lg:mb-10">
           {t('cta.body')}
         </p>
         <button type="button" className={btnPrimary}>

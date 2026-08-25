@@ -32,7 +32,7 @@ export default function InsightsSection() {
       <p className="uppercase tracking-[0.2em] text-xs text-slate-400 mb-2">
         {t('insights.label')}
       </p>
-      <h2 className="text-[clamp(28px,5vw,68px)] leading-[1.05] mb-6 lg:mb-14 max-w-[760px] font-bold">
+      <h2 className="text-[clamp(28px,5vw,68px)] leading-[1.05] mb-6 lg:mb-14 max-w-190 font-bold">
         {t('insights.heading')}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

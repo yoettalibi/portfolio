@@ -18,7 +18,7 @@ function autoResize(el: HTMLTextAreaElement) {
 const editCls =
   'w-full bg-transparent outline-none resize-none ' +
   'border border-transparent rounded ' +
-  'hover:border-white/15 focus:border-[#4D7CFE]/50 focus:bg-white/[0.04] ' +
+  'hover:border-white/15 focus:border-accent/50 focus:bg-white/4 ' +
   'px-1.5 transition-colors';
 
 export default function ComposeNewsletterDialog({ sub, onClose }: Props) {
@@ -122,7 +122,7 @@ export default function ComposeNewsletterDialog({ sub, onClose }: Props) {
                   value={form.subject}
                   onChange={field('subject')}
                   placeholder="Enter email subject…"
-                  className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white placeholder:text-slate-600 outline-none focus:border-accent/40 transition-colors"
+                  className="w-full rounded-xl border border-white/10 bg-white/4 px-4 py-2 text-sm text-white placeholder:text-slate-600 outline-none focus:border-accent/40 transition-colors"
                 />
               </div>
               <div>
@@ -136,7 +136,7 @@ export default function ComposeNewsletterDialog({ sub, onClose }: Props) {
                   value={form.preview_text}
                   onChange={field('preview_text')}
                   placeholder="Short preview shown in inbox…"
-                  className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-white placeholder:text-slate-600 outline-none focus:border-accent/40 transition-colors"
+                  className="w-full rounded-xl border border-white/10 bg-white/4 px-4 py-2 text-sm text-white placeholder:text-slate-600 outline-none focus:border-accent/40 transition-colors"
                 />
               </div>
             </div>
