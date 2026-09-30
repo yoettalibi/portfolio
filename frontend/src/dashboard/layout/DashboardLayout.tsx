@@ -6,6 +6,7 @@ import MailIcon from '../../shared/icons/MailIcon'
 import ProfileIcon from '../../shared/icons/ProfileIcon'
 import LaunchIcon from '../../shared/icons/LaunchIcon'
 import SubscribersIcon from '../../shared/icons/SubscribersIcon'
+import ProjectsIcon from '../../shared/icons/ProjectsIcon'
 
 const navCls = ({ isActive }: { isActive: boolean }) =>
   [
@@ -26,6 +27,7 @@ export default function DashboardLayout() {
 
   const navItems = [
     { path: '/dashboard/analytics',   label: t('dashboard.nav.analytics'),   sublabel: t('dashboard.nav.analyticsSub'),   Icon: GA4Icon },
+    { path: '/dashboard/projects',     label: t('dashboard.nav.projects'),     sublabel: t('dashboard.nav.projectsSub'),     Icon: ProjectsIcon },
     { path: '/dashboard/emails',       label: t('dashboard.nav.emails'),       sublabel: t('dashboard.nav.emailsSub'),       Icon: MailIcon },
     { path: '/dashboard/profile',      label: t('dashboard.nav.profile'),      sublabel: t('dashboard.nav.profileSub'),      Icon: ProfileIcon },
     { path: '/dashboard/coming-soon',  label: t('dashboard.nav.comingSoon'),    sublabel: t('dashboard.nav.comingSoonSub'),    Icon: LaunchIcon },

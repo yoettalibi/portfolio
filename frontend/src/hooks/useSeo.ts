@@ -68,6 +68,13 @@ export function useSeo({
     if (description) upsertMeta('meta[property="og:description"]', 'property', 'og:description', description)
     if (canonical)   upsertMeta('meta[property="og:url"]',         'property', 'og:url',         canonical)
 
+    // ── Twitter Card ──────────────────────────────────────────────
+    upsertMeta('meta[name="twitter:card"]',        'name', 'twitter:card',        'summary_large_image')
+    upsertMeta('meta[name="twitter:title"]',       'name', 'twitter:title',       title)
+    upsertMeta('meta[name="twitter:image"]',       'name', 'twitter:image',        img)
+    upsertMeta('meta[name="twitter:image:alt"]',   'name', 'twitter:image:alt',   title)
+    if (description) upsertMeta('meta[name="twitter:description"]', 'name', 'twitter:description', description)
+
     // ── JSON-LD structured data ────────────────────────────────────
     let scriptLd = document.querySelector<HTMLScriptElement>('script[data-seo-ld]')
     if (jsonLdStr) {

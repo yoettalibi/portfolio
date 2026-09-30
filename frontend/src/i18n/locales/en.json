@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact",
+    "projects": "Projects",
     "work": "Work",
     "systems": "Systems",
     "insights": "Insights",
@@ -16,8 +17,8 @@
     "heading": "Engineering scalable digital systems with",
     "headingFade": "precision, structure, and long-term thinking.",
     "body": "I design and build scalable SaaS platforms, mobile applications, workflow automation systems, and custom business software — engineered for operational clarity, long-term maintainability, and serious product performance.",
-    "cta1": "View Selected Work",
     "cta2": "Explore Systems",
+    "projectsCta": "Browse All Projects",
     "dashboardTitle": "System Overview",
     "dashboardStatus": "All systems operational",
     "dashboardPerfLabel": "System Performance",
@@ -40,7 +41,8 @@
       { "title": "Automation Systems", "desc": "Custom workflow automation and business process systems designed to eliminate manual overhead and increase operational efficiency at scale." },
       { "title": "Frontend Systems", "desc": "High-performance web interfaces and dashboard systems engineered for clarity, usability, and premium digital product experiences." },
       { "title": "Backend Infrastructure", "desc": "Reliable backend ecosystems — REST APIs, business logic layers, role-based access control, and structured data architecture built to scale." }
-    ]
+    ],
+    "projectsCta": "Explore All Projects"
   },
   "insights": {
     "label": "Engineering Notes",
@@ -194,7 +196,57 @@
       "comingSoon": "Coming Soon",
       "comingSoonSub": "Launch page",
       "subscribers": "Subscribers",
-      "subscribersSub": "Email list"
+      "subscribersSub": "Email list",
+      "projects": "Projects",
+      "projectsSub": "Portfolio entries"
+    },
+    "projects": {
+      "eyebrow": "Portfolio",
+      "heading": "Manage",
+      "headingFade": "projects",
+      "body": "Create and publish projects shown on the public /projects page.",
+      "newProject": "New project",
+      "edit": "Edit",
+      "remove": "Delete",
+      "confirmDelete": "Delete",
+      "cancelDelete": "Cancel",
+      "draft": "Draft",
+      "live": "Live",
+      "featured": "Featured",
+      "emptyTitle": "No projects yet",
+      "emptyBody": "Create your first project — it shows up on the public projects page once published.",
+      "loadError": "Could not load projects.",
+      "form": {
+        "createTitle": "New project",
+        "editTitle": "Edit project",
+        "notFound": "Project not found.",
+        "back": "Back to projects",
+        "sectionGeneral": "General",
+        "slug": "Slug (URL)",
+        "slugHelp": "Lowercase letters, numbers, dashes — used in /projects/<slug>",
+        "url": "Live URL",
+        "sortOrder": "Sort order",
+        "image": "Cover image",
+        "imageHelp": "JPG, PNG or WebP — auto-optimized to WebP",
+        "chooseImage": "Choose image",
+        "changeImage": "Change image",
+        "removeImage": "Remove image",
+        "featuredLabel": "Featured",
+        "featuredHelp": "Highlight this project in listings",
+        "publishedLabel": "Published",
+        "publishedHelp": "Visible on the public site",
+        "sectionContent": "Content",
+        "langHint": "Empty French fields fall back to English on the site.",
+        "title": "Title",
+        "category": "Category",
+        "description": "Description",
+        "tags": "Tags",
+        "addTag": "Add tag",
+        "save": "Save project",
+        "saving": "Saving…",
+        "saveError": "Could not save — check the fields and try again.",
+        "requiredFields": "Slug, title, category and description are required (EN)."
+      }
     },
     "header": {
       "label": "Dashboard",
@@ -365,6 +417,17 @@
     "back": "Back to Home",
     "processLabel": "How It Was Built — Step by Step",
     "outcomeLabel": "Final Delivery"
+  },
+  "projectsPage": {
+    "seoTitle": "Projects",
+    "eyebrow": "Selected Work",
+    "heading": "Projects &",
+    "headingFade": "Experiments",
+    "body": "A deeper look at what I've designed and built — real systems, tools, and products, from first sketch to shipped result.",
+    "visitSite": "Visit live site",
+    "emptyTitle": "No projects yet",
+    "emptyBody": "New work is on the way — check back soon.",
+    "loadError": "Couldn't load projects right now."
   },
   "projects": {
     "operational-intelligence": {

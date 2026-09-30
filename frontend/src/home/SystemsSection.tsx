@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import { items } from './systemsSection.data'
 
 const iconCls =
@@ -62,6 +63,17 @@ export default function SystemsSection() {
             <p className="relative z-10 text-slate-400 text-base leading-[1.8]">{t(desc)}</p>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center mt-10 lg:mt-14">
+        <Link
+          to="/projects"
+          className="inline-flex items-center gap-2.5 py-4 px-8 rounded-2xl text-base font-medium text-accent transition-all duration-300 border border-accent/25 bg-accent/4 hover:-translate-y-1 hover:bg-accent/10 hover:border-accent/40 hover:shadow-[0_0_30px_rgba(126,168,255,0.12)] group"
+        >
+          {t('systems.projectsCta')}
+          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </Link>
       </div>
     </section>
   )

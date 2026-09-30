@@ -1,0 +1,47 @@
+{
+  "name": "ET-TALIBI",
+  "description": "Digital systems architecture and full-stack engineering — SaaS platforms, mobile applications, workflow automation, and custom business software built for long-term performance.",
+  "url": "https://ettalibi.com",
+  "publisher": {
+    "name": "ET-TALIBI",
+    "url": "https://ettalibi.com"
+  },
+  "languages": ["en", "fr"],
+  "resources": [
+    {
+      "type": "page",
+      "url": "https://ettalibi.com/",
+      "title": "ET-TALIBI — Digital Systems Architecture & Engineering"
+    },
+    {
+      "type": "page",
+      "url": "https://ettalibi.com/about",
+      "title": "About — ET-TALIBI"
+    },
+    {
+      "type": "page",
+      "url": "https://ettalibi.com/projects",
+      "title": "Projects — ET-TALIBI"
+    },
+    {
+      "type": "page",
+      "url": "https://ettalibi.com/contact",
+      "title": "Contact — ET-TALIBI"
+    },
+    {
+      "type": "page",
+      "url": "https://ettalibi.com/work/operational-intelligence",
+      "title": "Operational Intelligence — ET-TALIBI"
+    },
+    {
+      "type": "page",
+      "url": "https://ettalibi.com/work/saas-platform",
+      "title": "SaaS Platform — ET-TALIBI"
+    },
+    {
+      "type": "data",
+      "url": "https://ettalibi.com/sitemap.xml",
+      "title": "Sitemap"
+    }
+  ]
+}

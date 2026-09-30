@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import CountUp from './CountUp'
-import { btnPrimary } from '../shared/constants'
 import { stats, tags, scrollToSection } from './heroSection.data'
 
 export default function HeroSection() {
@@ -26,9 +26,6 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button type="button" onClick={() => scrollToSection('work')} className={`${btnPrimary} sm:w-auto w-full`}>
-              {t('hero.cta1')}
-            </button>
             <button
               type="button"
               onClick={() => scrollToSection('systems')}
@@ -36,6 +33,15 @@ export default function HeroSection() {
             >
               {t('hero.cta2')}
             </button>
+            <Link
+              to="/projects"
+              className="sm:w-auto w-full py-4.5 px-7 rounded-2xl text-base text-accent transition-all duration-300 border border-accent/25 hover:-translate-y-1 hover:bg-accent/8 bg-accent/4 inline-flex items-center justify-center gap-2 group"
+            >
+              {t('hero.projectsCta')}
+              <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform duration-200" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
           </div>
         </div>
 

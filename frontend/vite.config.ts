@@ -13,6 +13,16 @@ export default defineConfig({
       },
     },
   },
+  // `vite preview` uses its own proxy config — needed so the prerender script
+  // (scripts/prerender.mjs) can fetch live API data like /api/projects.
+  preview: {
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+      },
+    },
+  },
   build: {
     rollupOptions: {
       output: {

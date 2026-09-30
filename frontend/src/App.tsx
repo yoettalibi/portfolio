@@ -16,6 +16,7 @@ const DashboardPage   = lazy(() => import('./dashboard/analytics/DashboardPage')
 const EmailsPage      = lazy(() => import('./dashboard/emails/EmailsPage'))
 const ProfilePage     = lazy(() => import('./dashboard/profile/ProfilePage'))
 const WorkProjectPage = lazy(() => import('./work/WorkProjectPage'))
+const ProjectsPage    = lazy(() => import('./projects/ProjectsPage'))
 const AboutPage       = lazy(() => import('./about/AboutPage'))
 const PrivacyPage          = lazy(() => import('./legal/PrivacyPage'))
 const TermsPage            = lazy(() => import('./legal/TermsPage'))
@@ -23,6 +24,8 @@ const CookiesPage          = lazy(() => import('./legal/CookiesPage'))
 const NotFoundPage         = lazy(() => import('./shared/NotFoundPage'))
 const ComingSoonSettingsPage = lazy(() => import('./dashboard/coming-soon/ComingSoonSettingsPage'))
 const SubscribersPage        = lazy(() => import('./dashboard/subscribers/SubscribersPage'))
+const ProjectsAdminPage      = lazy(() => import('./dashboard/projects/ProjectsPage'))
+const ProjectFormPage        = lazy(() => import('./dashboard/projects/ProjectFormPage'))
 
 function Root() {
   const location = useLocation()
@@ -70,6 +73,7 @@ const router = createBrowserRouter([
           { path: '/contact',   element: <ContactPage /> },
           { path: '/about',     element: <AboutPage /> },
           { path: '/work/:slug', element: <WorkProjectPage /> },
+          { path: '/projects', element: <ProjectsPage /> },
           { path: '/privacy',   element: <PrivacyPage /> },
           { path: '/terms',     element: <TermsPage /> },
           { path: '/cookies',   element: <CookiesPage /> },
@@ -85,6 +89,9 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <Navigate to="/dashboard/analytics" replace /> },
           { path: 'analytics',   element: <DashboardPage /> },
+          { path: 'projects',       element: <ProjectsAdminPage /> },
+          { path: 'projects/new',   element: <ProjectFormPage /> },
+          { path: 'projects/:id/edit', element: <ProjectFormPage /> },
           { path: 'emails',      element: <EmailsPage /> },
           { path: 'profile',     element: <ProfilePage /> },
           { path: 'coming-soon', element: <ComingSoonSettingsPage /> },

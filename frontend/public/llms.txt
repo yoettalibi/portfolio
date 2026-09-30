@@ -1,0 +1,28 @@
+# ET-TALIBI
+
+> Digital systems architecture and full-stack engineering — SaaS platforms, mobile applications, workflow automation, and custom business software built for long-term performance.
+
+ET-TALIBI is a portfolio and engineering showcase by a senior architect focused on scalable web and mobile systems.
+
+## Pages
+
+- [Home](https://ettalibi.com/) — overview, expertise, featured projects, and insights
+- [About](https://ettalibi.com/about) — background, approach, and engineering philosophy
+- [Projects](https://ettalibi.com/projects) — full project catalog with descriptions and tags
+- [Contact](https://ettalibi.com/contact) — get in touch for inquiries
+- [Work: Operational Intelligence](https://ettalibi.com/work/operational-intelligence) — case study
+- [Work: SaaS Platform](https://ettalibi.com/work/saas-platform) — case study
+- [Privacy Policy](https://ettalibi.com/privacy)
+- [Terms of Service](https://ettalibi.com/terms)
+- [Cookie Policy](https://ettalibi.com/cookies)
+
+## Feeds & Data
+
+- [Sitemap](https://ettalibi.com/sitemap.xml)
+- [AI Catalog](https://ettalibi.com/ai-catalog.json)
+
+## Guidelines
+
+- Crawl public pages only — do not access `/login`, `/dashboard`, or `/api`
+- Content is bilingual (English and French)
+- Project images are served as optimized WebP via the API

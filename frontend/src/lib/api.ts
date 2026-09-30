@@ -33,6 +33,9 @@ api.interceptors.request.use(async (config) => {
     csrfReady ??= api.get('/csrf-cookie').finally(() => { csrfReady = null })
     await csrfReady
   }
+  if (config.data instanceof FormData) {
+    delete config.headers['Content-Type']
+  }
   const lang = localStorage.getItem('lang') ?? 'en'
   config.headers['Accept-Language'] = lang
   return config

@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\EmailsController;
 use App\Http\Controllers\Api\NewsletterController;
+use App\Http\Controllers\Api\ProjectController;
 use App\Http\Controllers\Api\SettingsController;
 use App\Http\Controllers\Api\SubscriptionController;
 use Illuminate\Support\Facades\Route;
@@ -41,6 +42,10 @@ Route::middleware('throttle:5,1')->post('/subscribe', [NewsletterController::cla
 // Unsubscribe via email link (public, no auth required)
 Route::get('/unsubscribe', [SubscriptionController::class, 'unsubscribe']);
 
+// Public portfolio projects
+Route::get('/projects/{id}/image', [ProjectController::class, 'image'])->whereNumber('id');
+Route::get('/projects', [ProjectController::class, 'index']);
+
 // Protected admin routes
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
@@ -52,6 +57,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/emails/{id}/reply', [EmailsController::class, 'reply']);
     Route::delete('/emails/{id}', [EmailsController::class, 'destroy']);
     Route::post('/emails/block', [EmailsController::class, 'block']);
+    // Projects admin — update is POST (not PATCH) because PHP doesn't parse
+    // multipart/form-data bodies on PATCH, and the dashboard sends FormData.
+    Route::get('/admin/projects', [ProjectController::class, 'adminIndex']);
+    Route::post('/admin/projects', [ProjectController::class, 'store']);
+    Route::post('/admin/projects/{id}', [ProjectController::class, 'update'])->whereNumber('id');
+    Route::delete('/admin/projects/{id}', [ProjectController::class, 'destroy'])->whereNumber('id');
     Route::get('/subscriptions', [SubscriptionController::class, 'index']);
     Route::post('/subscriptions/{id}/send', [SubscriptionController::class, 'send']);
     Route::delete('/subscriptions/{id}', [SubscriptionController::class, 'destroy']);

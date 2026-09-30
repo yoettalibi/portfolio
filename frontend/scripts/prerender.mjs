@@ -16,7 +16,7 @@ const PORT = 4173
 const BASE_URL = `http://localhost:${PORT}`
 
 // Static public routes (skip /login, /dashboard/* — private, no need to index)
-const STATIC_ROUTES = ['/', '/about', '/contact', '/privacy', '/terms', '/cookies']
+const STATIC_ROUTES = ['/', '/about', '/contact', '/projects', '/privacy', '/terms', '/cookies']
 
 // Pull work project slugs straight from the data file so this list can't drift
 // out of sync with the app's actual routes.

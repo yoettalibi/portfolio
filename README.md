@@ -239,6 +239,8 @@ npm run dev
 | `GET` | `/api/settings` | Public settings (GA4 ID, coming-soon flag) |
 | `POST` | `/api/subscribe` | Newsletter opt-in |
 | `GET` | `/api/unsubscribe` | Newsletter opt-out via email link |
+| `GET` | `/api/projects` | Published portfolio projects (EN/FR fields) |
+| `GET` | `/api/projects/{id}/image` | Streamed project cover image |
 | `GET` | `/api/up` | Laravel health check → `{"status":"up"}` |
 
 All public routes are rate-limited (login: 5/min, contact: 3/5 min, subscribe: 5/min).
@@ -260,6 +262,10 @@ All public routes are rate-limited (login: 5/min, contact: 3/5 min, subscribe: 5
 | `GET` | `/api/subscriptions` | List newsletter subscribers |
 | `POST` | `/api/subscriptions/{id}/send` | Send email to subscriber |
 | `DELETE` | `/api/subscriptions/{id}` | Remove subscriber |
+| `GET` | `/api/admin/projects` | List all projects incl. drafts |
+| `POST` | `/api/admin/projects` | Create project (multipart, image upload) |
+| `POST` | `/api/admin/projects/{id}` | Update project (POST, not PATCH — PHP can't parse multipart on PATCH) |
+| `DELETE` | `/api/admin/projects/{id}` | Delete project + its image |
 
 ---
 

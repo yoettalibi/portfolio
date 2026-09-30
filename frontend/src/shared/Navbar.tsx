@@ -49,9 +49,10 @@ export default function Navbar() {
 
   useEffect(() => { setMobileOpen(false) }, [pathname])
 
-  const isContact = pathname === '/contact'
-  const isAbout   = pathname === '/about'
-  const isHome    = pathname === '/'
+  const isContact  = pathname === '/contact'
+  const isAbout    = pathname === '/about'
+  const isProjects = pathname.startsWith('/projects')
+  const isHome     = pathname === '/'
 
   return (
     <nav
@@ -96,6 +97,15 @@ export default function Navbar() {
             >
               {t('nav.about')}
               {isAbout && <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-accent" />}
+            </button>
+
+            <button
+              type="button"
+              onClick={() => navigate('/projects')}
+              className={`${linkCls(isProjects)} px-3.5 py-1.5 rounded-full transition-colors duration-200 ${isProjects ? 'bg-white/8' : 'hover:bg-white/5'}`}
+            >
+              {t('nav.projects')}
+              {isProjects && <span className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-accent" />}
             </button>
 
             <button
@@ -191,6 +201,7 @@ export default function Navbar() {
               { label: t('nav.home'),    action: () => navigate('/'),        active: isHome    },
               ...scrollLinks.map((link) => ({ label: t(link.key), action: () => goToSection(link.id), active: false })),
               { label: t('nav.about'),   action: () => navigate('/about'),   active: isAbout   },
+              { label: t('nav.projects'), action: () => navigate('/projects'), active: isProjects },
               { label: t('nav.contact'), action: () => navigate('/contact'), active: isContact },
             ] as { label: string; action: () => void; active: boolean }[]).map(({ label, action, active }) => (
               <button

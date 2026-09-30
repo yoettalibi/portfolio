@@ -3,6 +3,7 @@
     "home": "Accueil",
     "about": "À propos",
     "contact": "Contact",
+    "projects": "Portfolio",
     "work": "Projets",
     "systems": "Systèmes",
     "insights": "Réflexions",
@@ -16,8 +17,8 @@
     "heading": "Concevoir des systèmes numériques évolutifs avec",
     "headingFade": "précision, structure et vision à long terme.",
     "body": "Je conçois et développe des plateformes SaaS évolutives, des applications mobiles, des systèmes d'automatisation des workflows et des logiciels métiers sur mesure — pensés pour la clarté opérationnelle, la maintenabilité à long terme et la performance produit.",
-    "cta1": "Voir les projets sélectionnés",
     "cta2": "Explorer les systèmes",
+    "projectsCta": "Voir tous les projets",
     "dashboardTitle": "Vue d'ensemble du système",
     "dashboardStatus": "Tous les systèmes opérationnels",
     "dashboardPerfLabel": "Performance du système",
@@ -40,7 +41,8 @@
       { "title": "Systèmes d'automatisation", "desc": "Automatisation des workflows et systèmes de processus métiers conçus pour éliminer les tâches manuelles et améliorer l'efficacité opérationnelle à grande échelle." },
       { "title": "Systèmes frontend", "desc": "Interfaces web haute performance et systèmes de tableaux de bord conçus pour la clarté, l'ergonomie et des expériences produit digitales de qualité." },
       { "title": "Infrastructure backend", "desc": "Écosystèmes backend fiables — API REST, couches logiques métiers, contrôle d'accès basé sur les rôles et architecture de données structurée prête à évoluer." }
-    ]
+    ],
+    "projectsCta": "Explorer tous les projets"
   },
   "insights": {
     "label": "Notes d'ingénierie",
@@ -194,7 +196,57 @@
       "comingSoon": "Bientôt disponible",
       "comingSoonSub": "Page de lancement",
       "subscribers": "Abonnés",
-      "subscribersSub": "Liste email"
+      "subscribersSub": "Liste email",
+      "projects": "Projets",
+      "projectsSub": "Entrées du portfolio"
+    },
+    "projects": {
+      "eyebrow": "Portfolio",
+      "heading": "Gérer les",
+      "headingFade": "projets",
+      "body": "Créez et publiez les projets affichés sur la page publique /projects.",
+      "newProject": "Nouveau projet",
+      "edit": "Modifier",
+      "remove": "Supprimer",
+      "confirmDelete": "Supprimer",
+      "cancelDelete": "Annuler",
+      "draft": "Brouillon",
+      "live": "En ligne",
+      "featured": "À la une",
+      "emptyTitle": "Aucun projet",
+      "emptyBody": "Créez votre premier projet — il apparaîtra sur la page publique une fois publié.",
+      "loadError": "Impossible de charger les projets.",
+      "form": {
+        "createTitle": "Nouveau projet",
+        "editTitle": "Modifier le projet",
+        "notFound": "Projet introuvable.",
+        "back": "Retour aux projets",
+        "sectionGeneral": "Général",
+        "slug": "Slug (URL)",
+        "slugHelp": "Lettres minuscules, chiffres, tirets — utilisé dans /projects/<slug>",
+        "url": "URL du site",
+        "sortOrder": "Ordre d'affichage",
+        "image": "Image de couverture",
+        "imageHelp": "JPG, PNG ou WebP — optimisé automatiquement en WebP",
+        "chooseImage": "Choisir une image",
+        "changeImage": "Changer l'image",
+        "removeImage": "Supprimer l'image",
+        "featuredLabel": "À la une",
+        "featuredHelp": "Mettre ce projet en avant",
+        "publishedLabel": "Publié",
+        "publishedHelp": "Visible sur le site public",
+        "sectionContent": "Contenu",
+        "langHint": "Les champs français vides utilisent la version anglaise.",
+        "title": "Titre",
+        "category": "Catégorie",
+        "description": "Description",
+        "tags": "Étiquettes",
+        "addTag": "Ajouter une étiquette",
+        "save": "Enregistrer le projet",
+        "saving": "Enregistrement…",
+        "saveError": "Enregistrement impossible — vérifiez les champs et réessayez.",
+        "requiredFields": "Slug, titre, catégorie et description sont requis (EN)."
+      }
     },
     "header": {
       "label": "Tableau de bord",
@@ -363,6 +415,17 @@
     "back": "Retour à l'accueil",
     "processLabel": "La méthode de réalisation — étape par étape",
     "outcomeLabel": "Livraison finale"
+  },
+  "projectsPage": {
+    "seoTitle": "Projets",
+    "eyebrow": "Réalisations",
+    "heading": "Projets &",
+    "headingFade": "Expérimentations",
+    "body": "Un regard détaillé sur ce que j'ai conçu et construit — systèmes, outils et produits réels, du premier croquis au résultat livré.",
+    "visitSite": "Voir le site",
+    "emptyTitle": "Aucun projet pour l'instant",
+    "emptyBody": "De nouveaux projets arrivent — revenez bientôt.",
+    "loadError": "Impossible de charger les projets pour le moment."
   },
   "projects": {
     "operational-intelligence": {
